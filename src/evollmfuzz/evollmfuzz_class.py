@@ -143,3 +143,8 @@ if __name__ == "__init__":
         inputs=initial_inputs,
         iterations=10
     )
+
+    evaluate(found_inputs)
+
+
+
