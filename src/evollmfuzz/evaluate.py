@@ -20,7 +20,7 @@ def arith_eval(inp) -> float:
     p = Parser(str(inp), {a:ord(a) for a in string.ascii_lowercase if a != 'e'})
     return p.getValue()
 
-def evaluate(found_exception_inputs):
+def evaluate(found_exception_inputs, name):
     number_of_inp = 0
     overflow_count = 0
     underflow_count = 0
@@ -29,7 +29,7 @@ def evaluate(found_exception_inputs):
     divisionzero_count = 0
     nobug_count = 0 
 
-    with open('coverage.txt', 'w') as f:
+    with open('./result/%s_coverage.txt'%(name), 'w') as f:
         f.write("Trial      \t max\tmedian\ttotal \n")
         coverage_value_max = coverage_func(list(found_exception_inputs), "max")
         coverage_value_median = coverage_func(list(found_exception_inputs), "median")

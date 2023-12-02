@@ -2,7 +2,9 @@ import transformers
 import torch
 import torch.nn as nn
 
-from src.check import check_valid_input
+from src.evollmfuzz.llm.check import check_valid_input
+
+transformers.logging.set_verbosity_error()
 
 device = "cpu"
 model_name = 'Intel/neural-chat-7b-v3-1'
@@ -28,9 +30,7 @@ def mutatate_input_with_llm(equation, num_gen):
     input_strings = set()
     while len(input_strings) != num_gen:
         response = generate_response(system_input, user_input)
-        print(response)
         possible_strings = list(map(lambda x: x[3:].strip(), response.split('\n')))
-        print(possible_strings)
         for str_input in possible_strings:
             result = check_valid_input(str_input)
             if result == "Success":

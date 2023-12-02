@@ -57,7 +57,7 @@ valueerror_count = 0
 divisionzero_count = 0
 nobug_count = 0 
 
-with open('coverage.txt', 'w') as f:
+with open('../../result/Baseline_coverage.txt', 'w') as f:
     f.write("Trial      \t max\tmedian\ttotal \n")
     coverage_value_max = coverage_func(list(found_exception_inputs), "max")
     coverage_value_median = coverage_func(list(found_exception_inputs), "median")
