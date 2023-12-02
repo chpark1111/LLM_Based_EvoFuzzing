@@ -23,11 +23,6 @@ def arith_eval(inp) -> float:
     return p.getValue()
 
 
-# def arith_eval(inp) -> float:
-#     return eval(
-#         str(inp), {"sqrt": math.sqrt, "sin": math.sin, "cos": math.cos, "tan": math.tan, "log": math.log}
-#     )
-
 grammar = {
     "<start>": ["<complex_arith_expr>"],
 
@@ -63,7 +58,7 @@ divisionzero_count = 0
 nobug_count = 0 
 
 with open('coverage.txt', 'w') as f:
-    f.write("Trial \t max \t median \t total \n")
+    f.write("Trial      \t max\tmedian\ttotal \n")
     coverage_value_max = coverage_func(list(found_exception_inputs), "max")
     coverage_value_median = coverage_func(list(found_exception_inputs), "median")
     coverage_value_total = coverage_func(list(found_exception_inputs), "total")
@@ -71,15 +66,13 @@ with open('coverage.txt', 'w') as f:
     coverage_value_max = (224 * coverage_value_max - 1 ) / 176
     coverage_value_median = (224 * coverage_value_median - 1) / 176
     coverage_value_total = (277 * coverage_value_total - 3) / 176
+    f.write("Coverage")
     f.write("\t")
-    f.write(str(coverage_value_max))
+    f.write(str(format(coverage_value_max,".2f")))
     f.write("\t")
-    f.write(str(coverage_value_median))
+    f.write(str(format(coverage_value_median, ".2f")))
     f.write("\t")
-    print("123123123123")
-    print(coverage_value_total)
-    print(str(coverage_value_total))
-    f.write(str(coverage_value_total))
+    f.write(str(format(coverage_value_total, ".2f")))
 
 
     for inp in list(found_exception_inputs):
@@ -104,23 +97,28 @@ with open('coverage.txt', 'w') as f:
 
         if len(found_exception_inputs) - number_of_inp < 200:
             print(str(inp).ljust(30), oracle(str(inp)))
+
+
+    print("number_of_inp: ", number_of_inp)
+    print("Nobug: ", nobug_count / number_of_inp * 100)
+    print("ValueError: ", valueerror_count / number_of_inp * 100)
+    print("OverflowError: ", overflow_count / number_of_inp * 100)
+    print("UnderflowError: ", underflow_count / number_of_inp * 100)
+    print("ZerocollisionError: ", zero_collision_error / number_of_inp * 100)
+    print("DivisionError: ", divisionzero_count / number_of_inp * 100)
+
+    sum_count = valueerror_count + overflow_count + underflow_count + zero_collision_error + divisionzero_count
+    distinct_count = 0
+    distinct_count += 1 if overflow_count else 0
+    distinct_count += 1 if valueerror_count else 0
+    distinct_count += 1 if underflow_count else 0
+    distinct_count += 1 if zero_collision_error else 0
+    distinct_count += 1 if divisionzero_count else 0
+
+    print("Distinct bug: ", distinct_count ," / ", 5)
+    f.write('\n')
+    f.write("Distinct bug: " + str(distinct_count) + " / " + "5")
+    print("Bug Ratio: ", sum_count , " / ", number_of_inp)
+    f.write('\n')
+    f.write("Bug ratio: " + str(sum_count) + " / " + str(number_of_inp))
     f.close()
-
-print("number_of_inp: ", number_of_inp)
-print("Nobug: ", nobug_count / number_of_inp * 100)
-print("ValueError: ", valueerror_count / number_of_inp * 100)
-print("OverflowError: ", overflow_count / number_of_inp * 100)
-print("UnderflowError: ", underflow_count / number_of_inp * 100)
-print("ZerocollisionError: ", zero_collision_error / number_of_inp * 100)
-print("DivisionError: ", divisionzero_count / number_of_inp * 100)
-
-sum_count = valueerror_count + overflow_count + underflow_count + zero_collision_error + divisionzero_count
-distinct_count = 0
-distinct_count += 1 if overflow_count else 0
-distinct_count += 1 if valueerror_count else 0
-distinct_count += 1 if underflow_count else 0
-distinct_count += 1 if zero_collision_error else 0
-distinct_count += 1 if divisionzero_count else 0
-
-print("Distinct bug: ", distinct_count ," / ", 5)
-print("Bug Ratio: ", sum_count , " / ", number_of_inp)
