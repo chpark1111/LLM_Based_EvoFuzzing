@@ -21,9 +21,10 @@ def generate_response(system_input, user_input):
     return response.split("### Assistant:\n")[-1]
 
 
-def mutatate_input_with_llm(user_input, num_gen):
-    system_input = "You are a math expert assistant. Your mission is to help users generate various math equations. Do not include any other words. Do not generate same equations. You must make lot of variations from the given equation. Generate %d equations (not same) like this: "%(min(10, num_gen))
-    
+def mutatate_input_with_llm(equation, num_gen):
+    system_input = "You are a math expert assistant. Your mission is to help users generate math equations. Do not include any other words. You must change numbers and function, and also the structure of the equation."
+    user_input = "Generate %d equations like: %s"%(num_gen, equation)
+
     input_strings = set()
     while len(input_strings) != num_gen:
         response = generate_response(system_input, user_input)
