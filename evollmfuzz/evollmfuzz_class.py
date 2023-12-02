@@ -64,7 +64,13 @@ class EvoLLMFuzz:
         return
 
     def _initialize_population(self):
-        initial_population = llm(self.inputs) # TODO use LLM
+        initial_strings = llm(self.inputs) # TODO use LLM - generate strings
+
+        initial_population = []
+        for string in initial_strings:
+            initial_population.append(
+                Input(value=string)
+            )
 
         return initial_population
     
@@ -77,17 +83,21 @@ class EvoLLMFuzz:
 
         return min(participants, key=lambda x: x.fitness)
     
-    def _mutate_individual(self, individual):
+    def _mutation(self, individual):
         """
-        Use LLM to mutate individual
+        Use LLM to create multiple mutated individuals from 1 individual
         """
-        mutated_string = llm(individual.value)
+        mutated_strings = llm(individual.value)
+        
+        mutated_individuals = []
+        for string in mutated_strings:
+            mutated = Input(
+                value = string,
+            )
+            self._update_fitness(mutated)
+            mutated_individuals.append(mutated)
 
-        mutated_individual = Input(
-            value = mutated_string,
-        )
-
-        return mutated_individual
+        return mutated_individuals
     
     def fuzz(self):
         population = self._initialize_population()
@@ -99,9 +109,8 @@ class EvoLLMFuzz:
             while len(next_gen) < self._number_individuals:
                 parent = self._select(population)
 
-                offspring = self._mutate_individual(parent)
-
-                next_gen.append(offspring)
+                offspring = self._mutation(parent)
+                next_gen.extend(offspring)
 
             population.extend(next_gen)
             population = sorted(population, key=lambda x: x.fitness)
@@ -114,12 +123,11 @@ class EvoLLMFuzz:
         return population
 
 if __name__ == "__init__":
-
     def oracle(inp: str) -> (OracleResult, str):
         e = "nobug"
         return (OracleResult.NO_BUG, e)
     
-    initial_inputs = []
+    initial_inputs = [] # TODO fill
 
     elf = EvoLLMFuzz()
 
