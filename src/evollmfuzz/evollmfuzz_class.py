@@ -3,8 +3,6 @@ import random
 from typing import Callable, List, Union, Set, Tuple, Optional, Sequence
 from oracle import OracleResult
 from input import Input
-
-import sys
 from llm.intelchat import mutatate_input_with_llm
 
 class EvoLLMFuzz:
