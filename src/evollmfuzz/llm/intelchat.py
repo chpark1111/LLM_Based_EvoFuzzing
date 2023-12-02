@@ -1,5 +1,5 @@
 import transformers
-from src.check import check_valid_input
+from .check import check_valid_input
 
 model_name = 'Intel/neural-chat-7b-v3-1'
 model = transformers.AutoModelForCausalLM.from_pretrained(model_name)

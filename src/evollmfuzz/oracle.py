@@ -1,6 +1,5 @@
 from enum import Enum
 
-
 class OracleResult(Enum):
     BUG = "BUG"
     NO_BUG = "NO_BUG"

@@ -1,6 +1,6 @@
 from typing import Generator, Optional, Dict
 
-from oracle import OracleResult
+from .oracle import OracleResult
 
 class Input:
     """
