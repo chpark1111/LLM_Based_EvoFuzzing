@@ -2,6 +2,7 @@ import logging
 import random
 from typing import Callable, List, Union, Set, Tuple, Optional, Sequence
 
+from llm.intelchat import mutatate_input_with_llm
 from oracle import OracleResult
 from input import Input
 

@@ -21,14 +21,15 @@ def generate_response(system_input, user_input):
     return response.split("### Assistant:\n")[-1]
 
 
-def  mutatate_input_with_llm(num_gen, user_input):
-    system_input = "You are a math expert assistant. Your mission is to help users generate various math equations. Generate 5 equations like this (do not include any other words, do not generate same equations, try to make various variations): "
+def mutatate_input_with_llm(user_input, num_gen):
+    system_input = "You are a math expert assistant. Your mission is to help users generate various math equations. Do not include any other words. Do not generate same equations. You must make various variations from the given one. Generate %d equations (not same) like this: "%(min(10, num_gen))
     
     input_strings = set()
     while len(input_strings) != num_gen:
         response = generate_response(system_input, user_input)
-        possible_strings = list(map(lambda x: x[3:].strip(), response.split('\n')[1:]))
-
+        print(response)
+        possible_strings = list(map(lambda x: x.strip(), response.split('\n')[1:]))
+        print(possible_strings)
         for str_input in possible_strings:
             result = check_valid_input(str_input)
             if result == "Success":
@@ -40,6 +41,6 @@ def  mutatate_input_with_llm(num_gen, user_input):
     return list(input_strings)
 
 if __name__ == "__main__":
-    num_gen = 10
     user_input = "((sqrt(-10) + -13) * sqrt(-13))"
-    print(mutatate_input_with_llm(num_gen, user_input))
+    num_gen = 10
+    print(mutatate_input_with_llm(user_input, num_gen))
