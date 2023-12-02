@@ -174,9 +174,6 @@ class Check_Parser:
                 self.index += 1
             else:
                 break
-        #s = ''
-        #for a in var:
-        #    s += a # CHANGE from ORIGINAL to preserve taints. We need to taints.w__ join() calls.
         var = ''.join(var)
         
         function = _FUNCTIONS.get(var.lower())
@@ -225,9 +222,8 @@ class Check_Parser:
         
         return float(strValue)
 
-def check_valid_input(str1):
-    p = Check_Parser(str1, {a:ord(a) for a in string.ascii_lowercase if a != 'e'})
-    print(p.getValue())
+def check_valid_input(str):
+    p = Check_Parser(str, {a:ord(a) for a in string.ascii_lowercase if a != 'e'})
     try: 
         return "Success"
     except Exception:
