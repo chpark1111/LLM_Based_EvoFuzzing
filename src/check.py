@@ -14,7 +14,6 @@ _FUNCTIONS = {
     'tan': math.tan,
 }
 
-
 class Check_Parser:
     def __init__(self, string, vars = None):
         self.string = string
@@ -226,7 +225,7 @@ class Check_Parser:
         
         return float(strValue)
 
-def main(str):
+def check_valid_input(str):
     p = Check_Parser(str, {a:ord(a) for a in string.ascii_lowercase if a != 'e'})
     try: 
         return "Success"

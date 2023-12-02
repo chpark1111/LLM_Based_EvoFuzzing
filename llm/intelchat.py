@@ -1,4 +1,5 @@
 import transformers
+from src.check import check_valid_input
 
 model_name = 'Intel/neural-chat-7b-v3-1'
 model = transformers.AutoModelForCausalLM.from_pretrained(model_name)
@@ -20,9 +21,25 @@ def generate_response(system_input, user_input):
     return response.split("### Assistant:\n")[-1]
 
 
-# Example usage
-system_input = "You are a math expert assistant. Your mission is to help users generate various math equations. Generate 10 equations (not same) like this with a little bit of variation (do not include any other words): "
-user_input = "((sqrt(-10) + -13) * sqrt(-13))"
-response = generate_response(system_input, user_input)
-possible_strings = list(map(lambda x: x[3:], response.split('\n')[1:]))
-print(possible_strings)
+def  mutatate_input_with_llm(num_gen, user_input):
+    system_input = "You are a math expert assistant. Your mission is to help users generate various math equations. Generate 5 equations like this (do not include any other words, do not generate same equations, try to make various variations): "
+    
+    input_strings = set()
+    while len(input_strings) != num_gen:
+        response = generate_response(system_input, user_input)
+        possible_strings = list(map(lambda x: x[3:].strip(), response.split('\n')[1:]))
+
+        for str_input in possible_strings:
+            result = check_valid_input(str_input)
+            if result == "Success":
+                input_strings.add(str_input)
+            
+            if len(input_strings) == num_gen:
+                break
+    
+    return list(input_strings)
+
+if __name__ == "__main__":
+    num_gen = 10
+    user_input = "((sqrt(-10) + -13) * sqrt(-13))"
+    print(mutatate_input_with_llm(num_gen, user_input))
