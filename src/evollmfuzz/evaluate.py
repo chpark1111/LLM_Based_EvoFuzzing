@@ -3,6 +3,7 @@ import string
 from parse import *
 from exception import *
 from coverage_parse import *
+from .oracle import OracleResult
 
 def oracle(inp: str):
     try:

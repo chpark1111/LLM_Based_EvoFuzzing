@@ -4,6 +4,8 @@ from typing import Callable, List, Union, Set, Tuple, Optional, Sequence
 from .oracle import OracleResult
 from .input import Input
 from .llm.intelchat import mutatate_input_with_llm
+from evaluate import evaluate
+
 
 class EvoLLMFuzz:
     def __init__(
