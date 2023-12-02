@@ -268,7 +268,7 @@ class Parser:
 
 import string
 def main(arg):
-    p = Check_Parser(arg, {a:ord(a) for a in string.ascii_lowercase if a != 'e'})
+    p = Parser(arg, {a:ord(a) for a in string.ascii_lowercase if a != 'e'})
     print(p.getValue())
     
 
