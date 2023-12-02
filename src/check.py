@@ -1,5 +1,6 @@
 import math
 import sys
+import string
 
 _CONSTANTS = {
 
@@ -12,7 +13,6 @@ _FUNCTIONS = {
     'sqrt': math.sqrt,
     'tan': math.tan,
 }
-
 
 class Check_Parser:
     def __init__(self, string, vars = None):
@@ -225,16 +225,9 @@ class Check_Parser:
         
         return float(strValue)
 
-
-
-
-import string
-def main(arg):
-    p = Check_Parser(arg, {a:ord(a) for a in string.ascii_lowercase if a != 'e'})
+def check_valid_input(str):
+    p = Check_Parser(str, {a:ord(a) for a in string.ascii_lowercase if a != 'e'})
     try: 
-        print(p.getValue())
+        return "Success"
     except Exception:
-        print("Error")
-
-if __name__ == '__main__':
-    main(sys.argv[1])
+        return "Error"
