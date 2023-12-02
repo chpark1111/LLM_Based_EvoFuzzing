@@ -50,7 +50,7 @@ epp = EvoGFuzz(
     grammar=grammar,
     oracle=oracle,
     inputs=initial_inputs,
-    iterations=0
+    iterations=30
 )
 
 found_exception_inputs = epp.fuzz()
@@ -67,11 +67,18 @@ with open('coverage.txt', 'w') as f:
     coverage_value_max = coverage_func(list(found_exception_inputs), "max")
     coverage_value_median = coverage_func(list(found_exception_inputs), "median")
     coverage_value_total = coverage_func(list(found_exception_inputs), "total")
+
+    coverage_value_max = (224 * coverage_value_max - 1 ) / 176
+    coverage_value_median = (224 * coverage_value_median - 1) / 176
+    coverage_value_total = (277 * coverage_value_total - 3) / 176
     f.write("\t")
     f.write(str(coverage_value_max))
     f.write("\t")
     f.write(str(coverage_value_median))
     f.write("\t")
+    print("123123123123")
+    print(coverage_value_total)
+    print(str(coverage_value_total))
     f.write(str(coverage_value_total))
 
 
