@@ -8,10 +8,11 @@ if __name__ == "__init__":
     
     initial_inputs = ["tan(1272)", "cos(-125)", "1 + 3 - sin(34)"] # TODO fill
 
-    elf = EvoLLMFuzz()
+    elf = EvoLLMFuzz(num_individuals=20)
 
     found_inputs = elf.fuzz(
         oracle=oracle,
         inputs=initial_inputs,
-        iterations=10
+        iterations=2
     )
+    elf.evaluate_population(found_inputs)

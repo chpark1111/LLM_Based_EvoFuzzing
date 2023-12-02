@@ -13,10 +13,11 @@ class EvoLLMFuzz:
         oracle: Callable[[Union[Input, str]], Union[OracleResult, Sequence]],
         inputs: List[str],
         iterations: int = 10,
+        num_individuals : int = 100
     ):
         self._oracle: Callable[[Input], Union[OracleResult, Sequence]] = oracle
         self._max_iterations: int = iterations
-        self._number_individuals: int = 100
+        self._number_individuals: int = num_individuals
         self._elitism_rate: int = 5
         self._tournament_size: int = 4
         self._all_inputs = set()
@@ -130,6 +131,9 @@ class EvoLLMFuzz:
             count += 1
 
         return population
+    
+    def evaluate_population(self, population):
+        evaluate(population)
 
 if __name__ == "__init__":
     def oracle(inp: str) -> (OracleResult, str):
