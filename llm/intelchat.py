@@ -21,7 +21,8 @@ def generate_response(system_input, user_input):
 
 
 # Example usage
-system_input = "Generate similar (not same) equations like this (do not include any other words): "
-user_input = "(tan(-2) + sqrt(-3))"
+system_input = "You are a math expert assistant. Your mission is to help users generate various math equations. Generate 10 equations (not same) like this with a little bit of variation (do not include any other words): "
+user_input = "((sqrt(-10) + -13) * sqrt(-13))"
 response = generate_response(system_input, user_input)
-print(response)
+possible_strings = list(map(lambda x: x[3:], response.split('\n')[1:]))
+print(possible_strings)
