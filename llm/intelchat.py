@@ -22,7 +22,7 @@ def generate_response(system_input, user_input):
 
 
 def mutatate_input_with_llm(user_input, num_gen):
-    system_input = "You are a math expert assistant. Your mission is to help users generate various math equations. Do not include any other words. Do not generate same equations. You must make various variations from the given one. Generate %d equations (not same) like this: "%(min(10, num_gen))
+    system_input = "You are a math expert assistant. Your mission is to help users generate various math equations. Do not include any other words. Do not generate same equations. You must make lot of variations from the given equation. Generate %d equations (not same) like this: "%(min(10, num_gen))
     
     input_strings = set()
     while len(input_strings) != num_gen:
