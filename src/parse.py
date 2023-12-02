@@ -139,17 +139,15 @@ class Parser:
                 break
                      
         value = 1.0
-        
         for factor in values:
+            if value == 0 and factor == 0:
+                raise testError("zero_collision_error")
             value *= factor
             if value > overflow_value:
                 raise testError("overflow")
 
             if value < underflow_value:
                 raise testError("underflow")
-
-            if value == 0 and factor == 0:
-                raise testError("zero_collision_error")
 
         return value
 
@@ -269,7 +267,11 @@ class Parser:
 import string
 def main(arg):
     p = Parser(arg, {a:ord(a) for a in string.ascii_lowercase if a != 'e'})
-    print(p.getValue())
+    try: 
+        print(p.getValue())
+    except Exception as e:
+        print(e)
+        a = 1
     
 
 
