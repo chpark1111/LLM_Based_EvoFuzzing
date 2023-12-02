@@ -137,9 +137,9 @@ class EvoGFrame:
     def _generate_input_files(self, probabilistic_grammar):
         logging.info("Generating new Test Inputs")
         probabilistic_fuzzer = ProbabilisticGrammarFuzzer(probabilistic_grammar)
-        new_test_inputs = set()
+        new_test_inputs = list()
         for _ in range(self._number_individuals):
-            new_test_inputs.add(
+            new_test_inputs.append(
                 Input(DerivationTree.from_parse_tree(probabilistic_fuzzer.fuzz_tree()))
             )
         logging.info(f"Generated {len(new_test_inputs)} new Test Inputs")
@@ -164,6 +164,8 @@ class EvoGFrame:
         self._safe_fitness_for_grammar(sum_fitness)
 
         return fittest_individuals
+
+
 
     def _learn_probabilistic_grammar(self, test_inputs: Set[Input], reset=True):
         logging.info("Learning new Grammar")
@@ -234,6 +236,8 @@ class EvoGFrame:
     def get_found_exceptions_inputs(self) -> Set[Input]:
         return set(self.report.get_all_failing_inputs())
 
+
+
     def get_found_exceptions_strings(self) -> Set[str]:
         return {str(inp) for inp in self.report.get_all_failing_inputs()}
 
@@ -260,7 +264,8 @@ class EvoGFuzz(EvoGFrame):
 
         self._finalize()
 
-        return self.get_found_exceptions_inputs()
+        return new_population
+        return self.get_all_inputs()
 
 
 class EvoGGen(EvoGFrame):
