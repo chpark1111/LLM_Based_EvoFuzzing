@@ -1,10 +1,11 @@
 import logging
 import random
 from typing import Callable, List, Union, Set, Tuple, Optional, Sequence
-
-from llm.intelchat import mutatate_input_with_llm
 from oracle import OracleResult
 from input import Input
+
+import sys
+from llm.intelchat import mutatate_input_with_llm
 
 class EvoLLMFuzz:
     def __init__(
@@ -65,7 +66,14 @@ class EvoLLMFuzz:
         return
 
     def _initialize_population(self):
-        initial_strings = llm(self.inputs) # TODO use LLM - generate strings
+        initial_strings = [] # TODO use LLM - generate strings
+
+        gen_per_string = self._number_individuals/len(self.inputs) + 1
+        for i in range(len(self.inputs)):
+            initial_strings.extend(
+                mutatate_input_with_llm(self.inputs[i], gen_per_string) # create new individuals
+            )
+        initial_strings = initial_strings[:self._number_individuals]
 
         initial_population = []
         for string in initial_strings:
@@ -88,7 +96,7 @@ class EvoLLMFuzz:
         """
         Use LLM to create multiple mutated individuals from 1 individual
         """
-        mutated_strings = llm(individual.value)
+        mutated_strings = mutatate_input_with_llm(individual.value)
         
         mutated_individuals = []
         for string in mutated_strings:
@@ -128,7 +136,7 @@ if __name__ == "__init__":
         e = "nobug"
         return (OracleResult.NO_BUG, e)
     
-    initial_inputs = [] # TODO fill
+    initial_inputs = ["tan(1272)", "cos(-125)", "1 + 3 - sin(34)"] # TODO fill
 
     elf = EvoLLMFuzz()
 
