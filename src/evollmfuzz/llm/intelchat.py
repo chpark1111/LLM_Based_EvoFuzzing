@@ -24,7 +24,7 @@ def generate_response(system_input, user_input):
 
 
 def mutatate_input_with_llm(equation, num_gen):
-    system_input = "You are a math expert assistant. Your mission is to help users generate math equations. Do not include any other words. You must change numbers and function, and also the structure of the equation."
+    system_input = """You are a math expert assistant. Your mission is to help users generate math equations. Do not include any other words. You must change numbers and function, and also the structure of the equation."""
 
     input_strings = set()
     while len(input_strings) != num_gen:

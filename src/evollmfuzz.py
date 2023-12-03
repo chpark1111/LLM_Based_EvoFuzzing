@@ -24,7 +24,7 @@ if __name__ == "__main__":
         p = Parser(str(inp), {a:ord(a) for a in string.ascii_lowercase if a != 'e'})
         return p.getValue()
 
-    num_init_inputs = 20
+    num_init_inputs = 15
     input_data_dir = "./data/input.txt"
     initial_inputs = []
     with open(input_data_dir, "r") as f:
@@ -41,7 +41,7 @@ if __name__ == "__main__":
     elf = EvoLLMFuzz(oracle=oracle,
         inputs=initial_inputs,
         iterations=30,
-        num_individuals=80)
+        num_individuals=90)
 
     print("Start Fuzzer")
     found_inputs = elf.fuzz()
