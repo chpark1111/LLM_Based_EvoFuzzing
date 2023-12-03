@@ -15,7 +15,7 @@ class Input:
 
     @property
     def value(self) -> str:
-        return self._tree
+        return self._value
 
     @property
     def oracle(self) -> OracleResult:
@@ -40,7 +40,10 @@ class Input:
         if not isinstance(other, Input):
             return False
         return self._value == other._value
-
+    
+    def __hash__(self):
+        return hash(self._value)
+    
     # def __iter__(self) -> Generator[DerivationTree | OracleResult | None, None, None]:
     #     """
     #     Allows tuple unpacking: tree, oracle = input

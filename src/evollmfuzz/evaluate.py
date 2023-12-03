@@ -15,12 +15,14 @@ def oracle(inp: str):
         return (OracleResult.BUG, e)
     except ZeroDivisionError as e:
         return (OracleResult.BUG, e)
+    except OverflowError as e:
+        return (OracleResult.BUG, e)
 
 def arith_eval(inp) -> float: 
     p = Parser(str(inp), {a:ord(a) for a in string.ascii_lowercase if a != 'e'})
     return p.getValue()
 
-def evaluate(found_exception_inputs):
+def evaluate(found_exception_inputs, name):
     number_of_inp = 0
     overflow_count = 0
     underflow_count = 0
@@ -29,7 +31,7 @@ def evaluate(found_exception_inputs):
     divisionzero_count = 0
     nobug_count = 0 
 
-    with open('coverage.txt', 'w') as f:
+    with open('./result/%s_coverage.txt'%(name), 'w') as f:
         f.write("Trial      \t max\tmedian\ttotal \n")
         coverage_value_max = coverage_func(list(found_exception_inputs), "max")
         coverage_value_median = coverage_func(list(found_exception_inputs), "median")
@@ -66,6 +68,8 @@ def evaluate(found_exception_inputs):
                 valueerror_count += 1
             elif isinstance(exception_type, ZeroDivisionError):
                 divisionzero_count += 1
+            elif isinstance(exception_type, OverflowError):
+                overflow_count += 1
 
             if len(found_exception_inputs) - number_of_inp < 200:
                 print(str(inp).ljust(30), oracle(str(inp)))

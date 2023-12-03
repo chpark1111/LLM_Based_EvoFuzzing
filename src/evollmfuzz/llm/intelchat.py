@@ -1,8 +1,10 @@
 import transformers
-import torch
+import random
 import torch.nn as nn
 
-from src.check import check_valid_input
+from src.evollmfuzz.llm.check import check_valid_input
+
+transformers.logging.set_verbosity_error()
 
 device = "cpu"
 model_name = 'Intel/neural-chat-7b-v3-1'
@@ -23,14 +25,14 @@ def generate_response(system_input, user_input):
 
 def mutatate_input_with_llm(equation, num_gen):
     system_input = "You are a math expert assistant. Your mission is to help users generate math equations. Do not include any other words. You must change numbers and function, and also the structure of the equation."
-    user_input = "Generate %d equations (not same) like: %s"%(num_gen, equation)
 
     input_strings = set()
     while len(input_strings) != num_gen:
+        word_lists = [" different ", " similar ", "", "analogous", "variant", "divergent", "other", "diverse", "disparate", "various"]
+        sampled_word = random.sample(word_lists, k=1)[0]
+        user_input = "Generate %d%sequations (not same) like: %s"%(min(num_gen, 5), sampled_word, equation)
         response = generate_response(system_input, user_input)
-        print(response)
         possible_strings = list(map(lambda x: x[3:].strip(), response.split('\n')))
-        print(possible_strings)
         for str_input in possible_strings:
             result = check_valid_input(str_input)
             if result == "Success":
@@ -43,5 +45,5 @@ def mutatate_input_with_llm(equation, num_gen):
 
 if __name__ == "__main__":
     user_input = "(1 - ((-15 - cos(sin(-13))) - cos(cos(-237))))"
-    num_gen = 5
+    num_gen = 10
     print(mutatate_input_with_llm(user_input, num_gen))

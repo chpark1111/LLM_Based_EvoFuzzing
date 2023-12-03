@@ -8,11 +8,25 @@ _CONSTANTS = {
 }
 
 _FUNCTIONS = {
+    'abs': abs,
+    'acos': math.acos,
+    'asin': math.asin,
+    'atan': math.atan,
+    'ceil': math.ceil,
     'cos': math.cos,
+    'cosh': math.cosh,
+    'degrees': math.degrees,
+    'exp': math.exp,
+    'fabs': math.fabs,
+    'floor': math.floor,
     'log': math.log,
+    'log10': math.log10,
+    'radians': math.radians,
     'sin': math.sin,
+    'sinh': math.sinh,
     'sqrt': math.sqrt,
     'tan': math.tan,
+    'tanh': math.tanh
 }
 
 class Check_Parser:
@@ -180,6 +194,7 @@ class Check_Parser:
         function = _FUNCTIONS.get(var.lower())
         if function != None:
             args = self.parseArguments()
+            return float(function(1))
             return float(function(*args))
         
         constant = _CONSTANTS.get(var.lower())
@@ -225,7 +240,8 @@ class Check_Parser:
 
 def check_valid_input(str):
     p = Check_Parser(str, {a:ord(a) for a in string.ascii_lowercase if a != 'e'})
-    try: 
+    try:
+        p.getValue()
         return "Success"
     except Exception:
         return "Error"

@@ -1,10 +1,14 @@
 import logging
 import random
+import tqdm
+import math
+import copy
+
 from typing import Callable, List, Union, Set, Tuple, Optional, Sequence
 from .oracle import OracleResult
 from .input import Input
 from .llm.intelchat import mutatate_input_with_llm
-from evaluate import evaluate
+from .evaluate import evaluate
 
 
 class EvoLLMFuzz:
@@ -37,13 +41,13 @@ class EvoLLMFuzz:
         Updates the fitness of an individual by running oracle
         """
         bug_type = self._oracle(input)[1] # bug type (oracle returns tuple)
-
-        if bug_type not in self._bug_counts:
-            fitness = 1
-        elif bug_type == 'nobug':
+        
+        if bug_type == 'nobug':
             fitness = 0
+        elif bug_type not in self._bug_counts:
+            fitness = 1
         else:
-            fitness = 1/self._bug_counts[bug_type]
+            fitness = 1 / self._bug_counts[bug_type]
 
         input._fitness = fitness
 
@@ -67,19 +71,21 @@ class EvoLLMFuzz:
         return
 
     def _initialize_population(self):
-        initial_strings = [] # TODO use LLM - generate strings
+        initial_strings = copy.deepcopy(list(self.inputs))
 
-        gen_per_string = self._number_individuals/len(self.inputs) + 1
-        for i in range(len(self.inputs)):
+        gen_per_string = math.ceil(self._number_individuals / len(self.inputs)) - 1
+        input_list = list(self.inputs)
+        print("Generating Populations")
+        for i in tqdm.tqdm(range(len(input_list))):
             initial_strings.extend(
-                mutatate_input_with_llm(self.inputs[i], gen_per_string) # create new individuals
+                mutatate_input_with_llm(input_list[i], gen_per_string) # create new individuals
             )
         initial_strings = initial_strings[:self._number_individuals]
 
         initial_population = []
         for string in initial_strings:
             initial_population.append(
-                Input(value=string)
+                Input(value=str(string))
             )
 
         return initial_population
@@ -89,7 +95,7 @@ class EvoLLMFuzz:
         selects a individual among population using tournament selection
         """
         k = self._tournament_size
-        participants = random.choice(population, k)
+        participants = random.sample(population, k)
 
         return min(participants, key=lambda x: x.fitness)
     
@@ -97,7 +103,7 @@ class EvoLLMFuzz:
         """
         Use LLM to create multiple mutated individuals from 1 individual
         """
-        mutated_strings = mutatate_input_with_llm(individual.value)
+        mutated_strings = mutatate_input_with_llm(individual.value, num_gen=self._number_individuals / len(self.inputs))
         
         mutated_individuals = []
         for string in mutated_strings:
@@ -116,24 +122,29 @@ class EvoLLMFuzz:
         count = 0
         while count < self._max_iterations:
             next_gen = []
+            print("Mutating Next Generation")
+            pbar = tqdm.tqdm(total = self._max_iterations)
             while len(next_gen) < self._number_individuals:
                 parent = self._select(population)
 
                 offspring = self._mutation(parent)
                 next_gen.extend(offspring)
+                pbar.update(len(offspring))
 
             population.extend(next_gen)
             population = sorted(population, key=lambda x: x.fitness)
             population = population[:self._number_individuals]
 
             self._fitness_pop(population)
-
             count += 1
-
+            
+            print(count, population[0])
+            self.evaluate_population(population)
+            
         return population
     
     def evaluate_population(self, population):
-        evaluate(population)
+        evaluate(population, "LEAF")
 
 if __name__ == "__init__":
     def oracle(inp: str) -> (OracleResult, str):
@@ -150,7 +161,7 @@ if __name__ == "__init__":
         iterations=10
     )
 
-    evaluate(found_inputs)
+    evaluate(found_inputs, "LEAF")
 
 
 
