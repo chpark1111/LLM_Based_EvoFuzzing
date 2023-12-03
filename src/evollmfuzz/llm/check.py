@@ -225,7 +225,8 @@ class Check_Parser:
 
 def check_valid_input(str):
     p = Check_Parser(str, {a:ord(a) for a in string.ascii_lowercase if a != 'e'})
-    try: 
+    try:
+        p.getValue()
         return "Success"
     except Exception:
         return "Error"
