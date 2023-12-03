@@ -25,7 +25,7 @@ if __name__ == "__main__":
         return p.getValue()
 
     num_init_inputs = 15
-    input_data_dir = "./data/input.txt"
+    input_data_dir = "./data/input2.txt"
     initial_inputs = []
     with open(input_data_dir, "r") as f:
         nw = f.readline().strip("\n").strip()

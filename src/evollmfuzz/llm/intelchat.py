@@ -28,11 +28,12 @@ def mutatate_input_with_llm(equation, num_gen):
 
     input_strings = set()
     while len(input_strings) != num_gen:
-        word_lists = [" different ", " similar ", "", "analogous", "variant", "divergent", "other", "diverse", "disparate", "various"]
+        word_lists = [" different ", " similar ", "", " analogous ", " variant ", " divergent ", " other ", " diverse ", " disparate ", " various "]
         sampled_word = random.sample(word_lists, k=1)[0]
         user_input = "Generate %d%sequations (not same) like: %s"%(min(num_gen, 5), sampled_word, equation)
         response = generate_response(system_input, user_input)
         possible_strings = list(map(lambda x: x[3:].strip(), response.split('\n')))
+        print(possible_strings)
         for str_input in possible_strings:
             result = check_valid_input(str_input)
             if result == "Success":
