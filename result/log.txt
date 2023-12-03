@@ -1,3 +1,0 @@
-Initailize Fuzzer
-Start Fuzzer
-Generating Populations
