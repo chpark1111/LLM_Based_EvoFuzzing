@@ -41,7 +41,7 @@ if __name__ == "__main__":
     elf = EvoLLMFuzz(oracle=oracle,
         inputs=initial_inputs,
         iterations=30,
-        num_individuals=90)
+        num_individuals=75)
 
     print("Start Fuzzer")
     found_inputs = elf.fuzz()
