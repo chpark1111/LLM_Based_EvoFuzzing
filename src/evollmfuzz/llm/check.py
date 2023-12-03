@@ -95,7 +95,7 @@ class Check_Parser:
                 break
     
         
-        return sum(values)
+        return 1.0
 
     def parseMultiplication(self):
         values = [self.parseParenthesis()]
@@ -116,7 +116,7 @@ class Check_Parser:
                     values.append(1.0)
                 else:
                 
-                    values.append(1.0 / denominator)
+                    values.append(1.0)
             else:
                 break
                      
@@ -195,7 +195,7 @@ class Check_Parser:
         if function != None:
             args = self.parseArguments()
             return float(function(1))
-            return float(function(*args))
+            return float(function(*argss))
         
         constant = _CONSTANTS.get(var.lower())
         if constant != None:

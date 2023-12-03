@@ -19,6 +19,8 @@ if __name__ == "__main__":
             return (OracleResult.BUG, e)
         except ZeroDivisionError as e:
             return (OracleResult.BUG, e)
+        except OverflowError as e:
+            return (OracleResult.BUG, e)
 
     def arith_eval(inp) -> float: 
         p = Parser(str(inp), {a:ord(a) for a in string.ascii_lowercase if a != 'e'})
