@@ -1,4 +1,4 @@
 Trial      	 max	median	total 
-Coverage	63.35	53.09	67.92
-Distinct bug: 2 / 5
-Bug ratio: 52 / 100
+Coverage	63.91	51.36	66.22
+Distinct bug: 3 / 5
+Bug ratio: 46 / 100
