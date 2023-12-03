@@ -97,7 +97,7 @@ class EvoLLMFuzz:
         k = self._tournament_size
         participants = random.sample(population, k)
 
-        return min(participants, key=lambda x: x.fitness)
+        return max(participants, key=lambda x: x.fitness)
     
     def _mutation(self, individual):
         """
@@ -132,7 +132,7 @@ class EvoLLMFuzz:
                 pbar.update(len(offspring))
 
             population.extend(next_gen)
-            population = sorted(population, key=lambda x: x.fitness)
+            population = sorted(population, key=lambda x: x.fitness, reverse=True)
             population = population[:self._number_individuals]
 
             self._fitness_pop(population)
