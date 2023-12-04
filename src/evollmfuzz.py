@@ -26,7 +26,7 @@ if __name__ == "__main__":
         p = Parser(str(inp), {a:ord(a) for a in string.ascii_lowercase if a != 'e'})
         return p.getValue()
 
-    num_init_inputs = 15
+    num_init_inputs = 20
     input_data_dir = "./data/input2.txt"
     initial_inputs = []
     with open(input_data_dir, "r") as f:
@@ -37,13 +37,15 @@ if __name__ == "__main__":
             
     random.shuffle(initial_inputs)
     initial_inputs = initial_inputs[:num_init_inputs]
+    print("Print Initial inputs")
+    print(initial_inputs)
     # initial_inputs = ["tan(1272)", "cos(-125)", "1 + 3 - sin(34)"]
 
     print("Initailize Fuzzer")
     elf = EvoLLMFuzz(oracle=oracle,
         inputs=initial_inputs,
         iterations=30,
-        num_individuals=75)
+        num_individuals=100)
 
     print("Start Fuzzer")
     found_inputs = elf.fuzz()
