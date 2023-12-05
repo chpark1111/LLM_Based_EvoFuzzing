@@ -1,5 +1,1527 @@
 Print Initial inputs
-['cosh(cosh(cosh(cosh(cosh(9)))))', '(((cosh(4) * ((((acos(3) * tanh(3)) + sinh(cosh(3))) * -3) / acos(3))) / 4) / cosh(1))', '(acos(2) / acos(-8))', '(((cosh((5 * cosh((1 * 7)))) * 9) * 9) + 9)', 'ceil(tanh(acos(radians(asin(tanh(tanh(floor(log10(8)))))))))', 'log10((acos(2) / (-6 / acos(-4))))', '((asin((log10(-9) + acos((acos(8) * (acos(acos(1)) + 7))))) * asin(4)) - log(6))', 'log10(log(cosh(cosh(tanh(log10(cosh((log10(6) + log10(ceil(2))))))))))', 'floor(floor(tanh(acos((6 + cosh(asin(atan(7))))))))', '(asin((asin((8 - 9)) + ((3 - 3) - 9))) - (asin(1) * 3))', '((cosh(7) * 8) + sinh(8))', '(cosh(((asin(acos(-1)) * asin(4)) - (3 + tanh(tanh(((1 * 3) * 3)))))) - (1 + log(sinh(1))))', 'cosh(((cosh(((7 * cosh(2)) * (1 / cosh(7)))) + 9) + cosh(acos(cosh(cosh(1))))))', '((8 + 8) * ((9 * 2) / (acos(9) * 1)))', '(log10(7) + asin(asin(-4)))', 'log10(log10(tanh(acos(acos(floor(log10(log10((2 + 3)))))))))', '((-7 * (0 * 4)) * log10((5 * -4)))', '(((5 + 6) + (5 / 4)) / (5 + 5))', 'cosh((acos(acos(3)) / 3))', '((abs(sinh(cosh(-7))) - cos(fabs((radians(degrees(atan(9))) + -732)))) + 5)']
+['(asin((asin((8 - 9)) + ((3 - 3) - 9))) - (asin(1) * 3))', '((cosh(7) * 8) + sinh(8))', 'log10(log10(tanh(acos(acos(floor(log10(log10((2 + 3)))))))))', 'floor(floor(tanh(acos((6 + cosh(asin(atan(7))))))))', '(((cosh(4) * ((((acos(3) * tanh(3)) + sinh(cosh(3))) * -3) / acos(3))) / 4) / cosh(1))', 'degrees(cosh(degrees(1)))', '(log10(2) * sqrt(4))', 'log10(log(cosh(cosh(tanh(log10(cosh((log10(6) + log10(ceil(2))))))))))', 'asin(cos(-3532382000))', '(cosh(exp(9)) * (7 * cosh(cosh(cosh(7)))))', '(acos(acos(4)) / (acos(9) + (acos(2) + 8)))', '(-593 / (log10(5) + acos(2)))', '((-7 * (0 * 4)) * log10((5 * -4)))', '(asin(asin((acos((asin(4) + 8)) + asin(asin(1))))) + asin(asin(asin(asin((log10(1) - asin(acos(acos(-6)))))))))', 'cosh(cosh(cosh(cosh(cosh(9)))))', 'floor(sqrt((degrees(-311) - (degrees(9) + cosh(1)))))', 'log10((acos(2) / (-6 / acos(-4))))', 'cosh(((cosh(((7 * cosh(2)) * (1 / cosh(7)))) + 9) + cosh(acos(cosh(cosh(1))))))', '((abs(sinh(cosh(-7))) - cos(fabs((radians(degrees(atan(9))) + -732)))) + 5)', '((asin((log10(-9) + acos((acos(8) * (acos(acos(1)) + 7))))) * asin(4)) - log(6))', '(asin(8) - (((sqrt(-3) - asin(asin(1))) + acos(7)) * acos(sqrt(asin(7)))))', '((8 + 8) * ((9 * 2) / (acos(9) * 1)))', '(((5 + 6) + (5 / 4)) / (5 + 5))', '(log10(7) + asin(asin(-4)))', 'cosh(ceil((tanh(4) + 4)))']
 Initailize Fuzzer
 Start Fuzzer
 Generating Populations
+['log10(log(cosh(cosh(tanh(log10(cosh(log10(6) + log10(ceil(2)))))))) + log10(sinh(sinh(tanh(log10(cosh(log10(6) + log10(ceil(2))))))))))', 'log10(log(cosh(cosh(tanh(log10(cosh(log10(6) + log10(ceil(2)))))))) - log10(sinh(sinh(tanh(log10(cosh(log10(6) + log10(ceil(2))))))))))', 'log10(log(cosh(cosh(tanh(log10(cosh(log10(6) + log10(ceil(2)))))))) / log10(sinh(sinh(tanh(log10(cosh(log10(6) + log10(ceil(2))))))))))']
+['log10(log(cosh(cosh(tanh(log10(cosh(log10(6) + log10(ceil(2)))))))) + log10(sinh(sinh(tanh(log10(cosh(log10(6) + log10(ceil(2))))))))))', 'log10(log(cosh(cosh(tanh(log10(cosh(log10(6) + log10(ceil(2)))))))) - log10(sinh(sinh(tanh(log10(cosh(log10(6) + log10(ceil(2))))))))))', 'log10(log(cosh(cosh(tanh(log10(cosh(log10(6) + log10(ceil(2)))))))) / log10(sinh(sinh(tanh(log10(cosh(log10(6) + log10(ceil(2))))))))))']
+['log10(log(cosh(cosh(tanh(log10(cosh(log10(6) + log10(ceil(2)))))))) + log10(sinh(sinh(tanh(log10(cosh(log10(6) + log10(ceil(2))))))))))', 'log10(log(cosh(cosh(tanh(log10(cosh(log10(6) + log10(ceil(2)))))))) - log10(sinh(sinh(tanh(log10(cosh(log10(6) + log10(ceil(2))))))))))', 'log10(log(cosh(cosh(tanh(log10(cosh(log10(6) + log10(ceil(2)))))))) / log10(sinh(sinh(tanh(log10(cosh(log10(6) + log10(ceil(2))))))))))']
+['log10(log(cosh(cosh(tanh(log10(cosh((log10(6) + log10(ceil(3))))))))))', 'log10(log(cosh(cosh(tanh(log10(cosh((log10(6) + log10(ceil(4))))))))))', 'log10(log(cosh(cosh(tanh(log10(cosh((log10(6) + log10(ceil(5))))))))))']
+['(((7 + 8) + (7 / 3)) / (7 + 7))', '(((9 + 10) + (9 / 2)) / (9 + 9))', '(((11 + 12) + (11 / 5)) / (11 + 11))']
+['log10(7) + sin(asin(-4))', 'log10(7) + cos(asin(-4))', 'log10(7) + tan(asin(-4))']
+['((asin((log10(-9) + acos((acos(8) * (acos(acos(1)) + 5))))) * asin(4)) - log(6))', '((asin((log10(-9) + acos((acos(8) * (acos(acos(1)) + 3))))) * asin(4)) - log(6))', '((asin((log10(-9) + acos((acos(8) * (acos(acos(1)) + 1))))) * asin(4)) - log(6))']
+['cosh(cosh(7 * cosh(2) + 9) + cosh(acos(cosh(cosh(1)))))', 'cosh(cosh(7 * cosh(2) + 9) + cosh(acos(cosh(cosh(1))))) * cosh(7 * cosh(2))', 'cosh(cosh(7 * cosh(2) + 9) + cosh(acos(cosh(cosh(1))))) / cosh(7 * cosh(2))']
+['log10(log10(tanh(acos(acos(floor(log10(log10(2 + 3))))))) + 4)', 'log10(log10(tanh(acos(acos(floor(log10(log10(2 + 3))))))) * 5)', 'log10(log10(tanh(acos(acos(floor(log10(log10(2 + 3)))))))^2)', 'log10(log10(tanh(acos(acos(floor(log10(log10(2 + 3)))))))^3)', 'log10(log10(tanh(acos(acos(floor(log10(log10(2 + 3)))))))^4)']
+['log10(log10(tanh(acos(acos(floor(log10(log10(2 + 3))))))) + 4)', 'log10(log10(tanh(acos(acos(floor(log10(log10(2 + 3))))))) * 5)', 'log10(log10(tanh(acos(acos(floor(log10(log10(2 + 3)))))))^2)']
+['log10(log10(tanh(acos(acos(floor(log10(log10(2 + 3))))))) + 4)', 'log10(log10(tanh(acos(acos(floor(log10(log10(2 + 3))))))) * 5)', 'log10(log10(tanh(acos(acos(floor(log10(log10(2 + 3)))))))^2)']
+['log10(log10(tanh(acos(acos(floor(log10(log10(2 + 3))))))) + 4)', 'log10(log10(tanh(acos(acos(floor(log10(log10(2 + 3))))))) - 5)', 'log10(log10(tanh(acos(acos(floor(log10(log10(2 + 3))))))) * 6)']
+['((6 + 6) * ((10 * 2) / (acos(10) * 2)))', '((10 + 10) * ((12 * 2) / (acos(12) * 3)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4)))']
+['(sinh(ln(5)) * (3 * sinh(sinh(sinh(5)))))', '(tanh(log(11)) * (2 * tanh(tanh(tanh(11)))))', '(sec(sqrt(13)) * (4 * sec(sec(sec(13)))))']
+['(sinh(ln(5)) * (3 * sinh(sinh(sinh(5)))))', '(tanh(log(11)) * (2 * tanh(tanh(tanh(11)))))', '(sec(sqrt(13)) * (4 * sec(sec(sec(13)))))']
+['(sinh(ln(5)) * (3 * sinh(sinh(sinh(5)))))', '(tanh(log(11)) * (2 * tanh(tanh(tanh(11)))))', '(sec(sqrt(13)) * (4 * sec(sec(sec(sqrt(13))))))']
+['(sinh(ln(5)) * (3 * sinh(sinh(sinh(5)))))', '(tanh(sqrt(11)) * (2 * tanh(tanh(tanh(11)))))', '(sec(cbrt(13)) * (4 * sec(sec(sec(13)))))']
+['(cosh(exp(5)) * (3 * cosh(cosh(cosh(3)))))', '(cosh(exp(11)) * (5 * cosh(cosh(cosh(5)))))', '(cosh(exp(13)) * (9 * cosh(cosh(cosh(9)))))']
+['floor(tanh(acos(cosh(asin(atan(7))))))', 'floor(floor(atan(cosh(asin(7 + cosh(acos(6)))))))', 'floor(floor(tanh(asin(cosh(acos(6 + cosh(asin(7))))))))']
+['log10((acos(3) / (-5 / acos(-3))))', 'log10((acos(4) / (-4 / acos(-2))))', 'log10((acos(5) / (-3 / acos(-1))))']
+['(log10(3) * sqrt(9))', '(log10(4) * sqrt(16))', '(log10(5) * sqrt(25))']
+['(-593 / (log10(5) + acos(2))) + 3 * (log10(7) - acos(3))', '(-593 / (log10(5) + acos(2))) * (log10(7) - acos(3))', '(-593 / (log10(5) + acos(2))) ^ (log10(7) - acos(3))']
+['', '(-593 / (log10(7) + acos(3)))', '(-593 / (log10(3) + acos(4)))', '(-593 / (log10(9) + acos(5)))']
+['((sinh(7) * 8) + cosh(8))', '(cosh(7) * 8) + sinh(8) * 8', '(cosh(7) * 8) + sinh(8) * sinh(7)']
+['floor(sqrt((degrees(-311) - (degrees(9) + sin(1)))))', 'floor(sqrt((degrees(-311) - (degrees(9) + tan(1)))))', 'floor(sqrt((degrees(-311) - (degrees(9) + sec(1)))))']
+['floor(sqrt(abs(degrees(-311) - (degrees(9) + cosh(1)))))', 'floor(sqrt(degrees(-311) - (degrees(9) + cosh(1)) + pi))', 'floor(sqrt(degrees(-311) - (degrees(9) + cosh(1)) + sin(pi/2)))']
+['cosh(cosh(cosh(cosh(cosh(sinh(9))))))', 'cosh(cosh(cosh(cosh(cosh(tanh(9))))))', 'cosh(cosh(cosh(cosh(cosh(sech(9))))))', 'cosh(cosh(cosh(cosh(cosh(coth(9))))))', 'cosh(cosh(cosh(cosh(cosh(arccosh(9))))))']
+['cosh(cosh(cosh(cosh(cosh(sinh(9))))))', 'cosh(cosh(cosh(cosh(cosh(tanh(9))))))', 'cosh(cosh(cosh(cosh(cosh(sech(9))))))']
+['sinh(sinh(sinh(sinh(sinh(9)))))', 'sec(sec(sec(sec(sec(sec(9)))))', 'tanh(tanh(tanh(tanh(tanh(tanh(9)))))']
+['(asin(asin(acos(asin(4) + 8)) + asin(asin(1))) + asin(asin(asin(asin(log10(1) - asin(acos(acos(-6))))))))', '(asin(asin(acos(asin(4) + 8)) + asin(asin(1))) + asin(asin(asin(asin(log10(1) - asin(acos(acos(-6))))))))^2', '(asin(asin(acos(asin(4) + 8)) + asin(asin(1))) + asin(asin(asin(asin(log10(1) - asin(acos(acos(-6)))))))) * e^x']
+['(asin(asin((acos((asin(4) + 8)) + asin(asin(1))))) + asin(asin(asin(asin((log10(1) - asin(acos(acos(-6)))))))))', '(asin(asin((acos((asin(4) + 8)) + asin(asin(1))))) + asin(asin(asin(asin((log10(1) - asin(acos(acos(1)))))))))', '(asin(asin((acos((asin(4) + 8)) + asin(asin(1))))) + asin(asin(asin(asin((log10(1) - asin(acos(acos(2)))))))))']
+['(((cosh(3) * ((((acos(2) * tanh(2)) + sinh(cosh(2))) * -2) / acos(2))) / 3) / cosh(2)) / cosh(1)', '(((cosh(2) * ((((acos(4) * tanh(4)) + sinh(cosh(4))) * -4) / acos(4))) / 2) / cosh(3)) / cosh(1)', '(((cosh(5) * ((((acos(1) * tanh(1)) + sinh(cosh(1))) * -1) / acos(1))) / 5) / cosh(4)) / cosh(1)']
+['(acos(acos(3)) / (acos(5) + (acos(1) + 6)))', '(acos(acos(2)) / (acos(7) + (acos(6) + 4)))', '(acos(acos(1)) / (acos(8) + (acos(9) + 3)))']
+['(asin(8) - (sqrt(-3) * (asin(asin(1)) - acos(7)) * acos(sqrt(asin(7)))))', '(asin(8) - (sqrt(-3) * (asin(asin(1)) - acos(7)) * acos(sqrt(asin(7))))) + acos(sqrt(asin(7)))', '(asin(8) - (sqrt(-3) * (asin(asin(1)) - acos(7)) * acos(sqrt(asin(7))))) * acos(sqrt(asin(7)))']
+['(-7 * (0 * 4)) * log10(5 * -4)', '(-7 * (0 * 4)) * log10(5 * -4) + 3 * log10(5 * -4)', '(-7 * (0 * 4)) * log10(5 * -4) + 3 * log10(5 * -4) + log10(5 * -4)']
+['sinh(radians(cosh(radians(2))))', 'tanh(degrees(tan(degrees(3))))', 'sec(radians(sec(radians(4))))']
+['cos(sin(radians(3))) = cos(sin(3π/2))', 'tan(sec(degrees(2))) = tan(1/cos(2))', 'sec(cos(radians(4))) = 1/cos(4)']
+['radians(cosh(radians(2)))', 'radians(cosh(radians(3)))', 'radians(cosh(radians(4)))']
+['(asin(asin(8 - 9)) + (asin(3 - 3) - 9)) - (asin(1) * 3)', '(asin(asin(8 - 9)) + (asin(3 - 3) - 9)) - (asin(1) * 3) + (asin(1) * 3)', '(asin(asin(8 - 9)) + (asin(3 - 3) - 9)) - (asin(1) * 3) + (asin(1) * 3) + (asin(1) * 3)']
+['((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5)', '((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*cos(radians(degrees(atan(9)))))', '((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9)))))']
+['cosh(floor(tanh(3) - 3))', 'cosh(floor(tanh(2) + 2))', 'cosh(floor(tanh(1) + 1))']
+['sin(tan(3532382000))', 'cos(asin(3532382000))', 'sec(cot(3532382000))']
+['sin(cos(-3532382000))', 'cos(asin(3532382000))', 'tan(sin(3532382000))']
+Mutating Next Generation
+['floor(sqrt((degrees(-311) - (degrees(9) + cos(1)))))', 'floor(sqrt((degrees(-311) - (degrees(9) + tan(1)))))', 'floor(sqrt((degrees(-311) - (degrees(9) + sec(1)))))', 'floor(sqrt((degrees(-311) - (degrees(9) + csc(1)))))']
+['floor(sqrt(abs(degrees(-311) - degrees(9) - sin(1))))', 'floor(sqrt(degrees(-311) - degrees(9) - sin(1)))', 'floor(sqrt(degrees(-311) - degrees(9) + sin(1)))', 'floor(sqrt(degrees(-311) + degrees(9) - sin(1)))']
+['((asin(log10(9) - acos(acos(8) * (acos(acos(1)) + 3))) * acos(4)) - log(6))', '(asin(log10(9) + acos(acos(8) * (acos(acos(1)) + 3))) * acos(4)) - log(6)', '(asin(log10(9) + acos(acos(8) * (acos(acos(1)) + 3))) * acos(4)) - log(6) + 5', '(asin(log10(9) + acos(acos(8) * (acos(acos(1)) + 3))) * acos(4)) - log(6) + 5 * acos(4)']
+['(asin(8) - (sqrt(-3) * (asin(asin(1)) - acos(7)) * acos(sqrt(asin(7)))))', '(asin(8) - (sqrt(-3) * (asin(asin(1)) - acos(7)) * acos(sqrt(asin(7))))) + acos(sqrt(asin(7)))', '(asin(8) - (sqrt(-3) * (asin(asin(1)) - acos(7)) * acos(sqrt(asin(7))))) * acos(sqrt(asin(7)))', '(asin(8) - (sqrt(-3) * (asin(asin(1)) - acos(7)) * acos(sqrt(asin(7))))) / acos(sqrt(asin(7)))', '(asin(8) - (sqrt(-3) * (asin(asin(1)) - acos(7)) * acos(sqrt(asin(7))))) ^ acos(sqrt(asin(7)))']
+['log10(7) + sec(cos(4))', 'log10(7) + sin(asin(4))', 'log10(7) + csc(asin(4))', 'log10(7) + cot(asin(4))']
+['log10(7) + tan(asin(4))', 'log10(7) + tan(asin(-4)) + 3', 'log10(7) + tan(asin(-4)) * 2', 'log10(7) + tan(asin(-4)) / 2']
+['((10 - 10) * ((12 / 2) * acos(12) / 3))', '(10 * (10 + 10) * (12 * 2) / (acos(12) * 3))', '(10 * (10 + 10) * (12 * 2) / (acos(12) * 3))^2', '(10 * (10 + 10) * (12 * 2) / (acos(12) * 3))^3', '(10 * (10 + 10) * (12 * 2) / (acos(12) * 3))^4', '(10 * (10 + 10) * (12 * 2) / (acos(12) * 3))^5', '(10 * (10 + 10) * (12 * 2) / (acos(12) * 3))^6', '(10 * (10 + 10) * (12 * 2) / (acos(12) * 3))^7', '(10 * (10 + 10) * (12 * 2) / (acos(12) * 3))^8', '(10 * (10 + 10) * (12 * 2) / (acos(12) * 3))^9']
+['((10 + 10) * ((12 * 2) / (acos(12) * 3)))', '((10 + 10) * ((12 * 2) / (acos(12) * 3)))', '((10 + 10) * ((12 * 2) / (acos(12) * 3)))', '((10 + 10) * ((12 * 2) / (acos(12) * 3)))']
+['((10 + 10) * ((12 * 2) / (acos(12) * 3))) = ((20) * ((24) / (acos(12) * 3)))', '((10 + 10) * ((12 * 2) / (acos(12) * 3))) = ((20) * ((24) / (acos(12) * 3))) * 5', '((10 + 10) * ((12 * 2) / (acos(12) * 3))) = ((20) * ((24) / (acos(12) * 3))) + 10', '((10 + 10) * ((12 * 2) / (acos(12) * 3))) = ((20) * ((24) / (acos(12) * 3))) + 10 * 5']
+['((10 + 10) * ((12 * 2) / (acos(12) * 3))) = 20 * ((24 / (acos(12) * 3)))', '((10 + 10) * ((12 * 2) / (acos(12) * 3))) = 20 * (24 / (acos(12) * 3)) * 5', '((10 + 10) * ((12 * 2) / (acos(12) * 3))) = 20 * (24 / (acos(12) * 3)) * 5 * 2', '((10 + 10) * ((12 * 2) / (acos(12) * 3))) = 20 * (24 / (acos(12) * 3)) * 5 * 2 * 3']
+['((10 - 10) * ((12 / 2) * acos(12) / 3))', '(10 * (10 + 10) * (12 * 2) / (acos(12) * 3))', '(10 * (10 + 10) * (12 * 2) / (acos(12) * 3))^2', '(10 * (10 + 10) * (12 * 2) / (acos(12) * 3))^3', '(10 * (10 + 10) * (12 * 2) / (acos(12) * 3))^4', '(10 * (10 + 10) * (12 * 2) / (acos(12) * 3))^5', '(10 * (10 + 10) * (12 * 2) / (acos(12) * 3))^6', '(10 * (10 + 10) * (12 * 2) / (acos(12) * 3))^7', '(10 * (10 + 10) * (12 * 2) / (acos(12) * 3))^8', '(10 * (10 + 10) * (12 * 2) / (acos(12) * 3))^9']
+['((10 + 10) * (12 * 2) * (acos(12) * 3)) / (12 * 2)', '(10 + 10) * (12 * 2) * (acos(12) * 3) / (12 * 2)', '(10 + 10) * (12 * 2) * (acos(12) * 3) / (12 * 2) + 10', '(10 + 10) * (12 * 2) * (acos(12) * 3) / (12 * 2) + 10 * (10 + 10)']
+['((12 + 12) * ((14 * 2) / (acos(14) * 4))) = ((24 * 2) / (acos(14) * 4))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) = ((12 * 2) / (acos(14) * 4))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) = ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) = ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '', 'e: The last two equations are the same as the original equation.']
+['((12 + 12) * ((14 * 2) / (acos(14) * 4))) = ((24) * ((28) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) = ((24) * ((28) / (acos(14) * 4))) + 12', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) = ((24) * ((28) / (acos(14) * 4))) - 12', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) = ((24) * ((28) / (acos(14) * 4))) / 12']
+['((12 + 12) * ((14 * 2) / (acos(14) * 4))) = ((24) * ((28) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) = ((24) * ((28) / (acos(14) * 4))) + 12', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) = ((24) * ((28) / (acos(14) * 4))) - 12', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) = ((24) * ((28) / (acos(14) * 4))) * 12']
+['((12 - 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4)))^2', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) / ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) + ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) - ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4))) - ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) / ((12 + 12) * ((14 * 2) / (acos(14) * 4))) + ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) / ((12 + 12) * ((14 * 2) / (acos(14) * 4))) - ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) / ((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))']
+['((16 + 16) * ((18 * 2) / (acos(18) * 1)))', '((16 + 16) * ((18 * 2) / (acos(18) * 2)))', '((16 + 16) * ((18 * 2) / (acos(18) * 3)))', '((16 + 16) * ((18 * 2) / (acos(18) * 4)))']
+['(-7 * (0 * 4)) * log10(5 * -4) + 3 * (2 * 5) * sin(2 * 3)', '(-7 * (0 * 4)) * log10(5 * -4) + 3 * (2 * 5) * sin(2 * 3) + 4 * (3 * 2) * cos(2 * 3)', '(-7 * (0 * 4)) * log10(5 * -4) + 3 * (2 * 5) * sin(2 * 3) + 4 * (3 * 2) * cos(2 * 3) + 5 * (2 * 3) * tan(2 * 3)', '(-7 * (0 * 4)) * log10(5 * -4) + 3 * (2 * 5) * sin(2 * 3) + 4 * (3 * 2) * cos(2 * 3) + 5 * (2 * 3) * tan(2 * 3) + 6 * (2 * 3) * sec(2 * 3)']
+['(-7 * (0 * 4)) * log10(5 * -4)', '(-7 * (0 * 4)) * log10(5 * -2)', '(-7 * (0 * 4)) * log10(5 * -1)', '(-7 * (0 * 4)) * log10(5 * 1)']
+['cosh(cosh(cosh(cosh(cosh(sinh(9))))))', 'cosh(cosh(cosh(cosh(cosh(tanh(9))))))', 'cosh(cosh(cosh(cosh(cosh(sec(9))))))', 'cosh(cosh(cosh(cosh(cosh(cot(9))))))']
+['cosh(cosh(cosh(cosh(cosh(sinh(9))))))', 'cosh(cosh(cosh(cosh(cosh(tanh(9))))))', 'cosh(cosh(cosh(cosh(cosh(sech(9))))))', 'cosh(cosh(cosh(cosh(cosh(coth(9))))))']
+['cosh(cosh(cosh(cosh(cosh(sinh(9))))))', 'cosh(cosh(cosh(cosh(cosh(tanh(9))))))', 'cosh(cosh(cosh(cosh(cosh(sech(9))))))', 'cosh(cosh(cosh(cosh(cosh(csch(9))))))']
+['sh(cosh(cosh(cosh(cosh(10)))))', 'h(cosh(cosh(cosh(cosh(11)))))', 'h(cosh(cosh(cosh(cosh(12)))))', 'h(cosh(cosh(cosh(cosh(13)))))']
+['cosh(cosh(cosh(cosh(cosh(sinh(9))))))', 'cosh(cosh(cosh(cosh(cosh(tanh(9))))))', 'cosh(cosh(cosh(cosh(cosh(sech(9))))))', 'cosh(cosh(cosh(cosh(cosh(coth(9))))))']
+['cosh(cosh(cosh(cosh(cosh(sinh(9))))))', 'cosh(cosh(cosh(cosh(cosh(tanh(9))))))', 'cosh(cosh(cosh(cosh(cosh(sec(9))))))', 'cosh(cosh(cosh(cosh(cosh(cot(9))))))']
+['cosh(cosh(cosh(cosh(cosh(sinh(9))))))', 'cosh(cosh(cosh(cosh(cosh(tanh(9))))))', 'cosh(cosh(cosh(cosh(cosh(sech(9))))))', 'cosh(cosh(cosh(cosh(cosh(coth(9))))))']
+['cosh(cosh(cosh(cosh(cosh(10)))))', 'cosh(cosh(cosh(cosh(cosh(11)))))', 'cosh(cosh(cosh(cosh(cosh(12)))))', 'cosh(cosh(cosh(cosh(cosh(13)))))']
+['(asin(asin((acos((asin(4) + 8)) + asin(asin(1))))) + asin(asin(asin(asin((log10(1) - asin(acos(acos(-6)))))))))', '(asin(asin((acos((asin(4) + 8)) + asin(asin(1))))) + asin(asin(asin(asin((log10(1) - asin(acos(acos(-6)))))))))^2', '(asin(asin((acos((asin(4) + 8)) + asin(asin(1))))) + asin(asin(asin(asin((log10(1) - asin(acos(acos(-6))))))))) * e^x', '(asin(asin((acos((asin(4) + 8)) + asin(asin(1))))) + asin(asin(asin(asin((log10(1) - asin(acos(acos(-6))))))))) / x^2']
+['(asin(asin((acos((asin(4) + 8)) + asin(asin(1))))) + asin(asin(asin(asin((log10(1) - asin(acos(acos(-6)))))))))', '(asin(asin((acos((asin(4) + 8)) + asin(asin(1))))) + asin(asin(asin(asin((log10(1) - asin(acos(acos(2)))))))))', '(asin(asin((acos((asin(4) + 8)) + asin(asin(1))))) + asin(asin(asin(asin((log10(1) - asin(acos(acos(3)))))))))', '(asin(asin((acos((asin(4) + 8)) + asin(asin(1))))) + asin(asin(asin(asin((log10(1) - asin(acos(acos(4)))))))))']
+['floor(floor(atan(cosh(asin(7 + cosh(acos(6))))))) + floor(floor(atan(cosh(asin(7 + cosh(acos(6)))))))', 'floor(floor(atan(cosh(asin(7 + cosh(acos(6))))))) * floor(floor(atan(cosh(asin(7 + cosh(acos(6)))))))', 'floor(floor(atan(cosh(asin(7 + cosh(acos(6))))))) / floor(floor(atan(cosh(asin(7 + cosh(acos(6)))))))', 'floor(floor(atan(cosh(asin(7 + cosh(acos(6))))))) ^ floor(floor(atan(cosh(asin(7 + cosh(acos(6)))))))']
+['floor(tan(sin(cosh(sec(atan(3 + cosh(tan(3))))))))', 'floor(sin(cos(tan(sec(atan(2 + sin(cos(3))))))))', 'floor(cos(tan(sin(sec(atan(1 + sin(cos(2))))))))', 'floor(sin(tan(cos(sec(atan(4 + cos(sin(1))))))))']
+['floor(floor(atan(cosh(asin(7 + cosh(acos(5)))))))', 'floor(floor(atan(cosh(asin(7 + cosh(acos(4)))))))', 'floor(floor(atan(cosh(asin(7 + cosh(acos(3)))))))', 'floor(floor(atan(cosh(asin(7 + cosh(acos(2)))))))']
+['radians(cosh(radians(1)))', 'radians(cosh(radians(2)))', 'radians(cosh(degrees(1)))', 'degrees(cosh(radians(1)))']
+['(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732))) + 5', '(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) - 732))) + 5', '(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732)) + 5)', '(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732)) - 5)', '(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732)) + 5) * 2']
+['((abs(sinh(cosh(-7))) - cos(fabs((radians(degrees(atan(9))) + -732)))) + 5)', '(abs(sinh(cosh(-7))) - cos(fabs((radians(degrees(atan(9))) + -732))) + 5)', '(abs(sinh(cosh(-7))) - cos(fabs((radians(degrees(atan(9))) + -732))) + 5 * 2)', '(abs(sinh(cosh(-7))) - cos(fabs((radians(degrees(atan(9))) + -732))) + 5 * 2 * 3)']
+['((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9)))))', '((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9))))) + 3*cos(radians(degrees(atan(9))))', '((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9))))) + 3*cos(radians(degrees(atan(9)))) + 2*tan(radians(degrees(atan(9))))', '((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9))))) + 3*cos(radians(degrees(atan(9)))) + 2*tan(radians(degrees(atan(9)))) + 4*sec(radians(degrees(atan(9))))']
+['(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9))))', '(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9)))) * 3', '(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9)))) * 3^2', '(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9)))) * 3^3']
+['(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9))))', '(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9)))) * cos(radians(degrees(atan(9))))', '(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9)))) * cos(radians(degrees(atan(9)))) * cos(radians(degrees(atan(9))))', '(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9)))) * cos(radians(degrees(atan(9)))) * cos(radians(degrees(atan(9)))) * cos(radians(degrees(atan(9))))']
+['(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9))))', '(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9)))) * 3', '(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9)))) * 3^2', '(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9)))) * 3^3']
+['(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9))))', '(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9)))) * cos(radians(degrees(atan(9))))', '(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9)))) * cos(radians(degrees(atan(9)))) * cos(radians(degrees(atan(9))))', '(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9)))) * cos(radians(degrees(atan(9)))) * cos(radians(degrees(atan(9)))) * cos(radians(degrees(atan(9))))']
+['(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9))))', '(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9)))) * cos(radians(degrees(atan(9))))', '(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9)))) * cos(radians(degrees(atan(9)))) * cos(radians(degrees(atan(9))))', '(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9)))) * cos(radians(degrees(atan(9)))) * cos(radians(degrees(atan(9)))) * cos(radians(degrees(atan(9))))']
+['((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9)))))', '((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9)))))', '((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9)))))', '((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9)))))']
+['((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9)))))', '((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9)))))', '((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9)))))', '((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9)))))']
+['((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9)))))', '((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9)))))', '((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9)))))', '((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9)))))']
+['((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9)))))', '((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9))))) + 3*cos(radians(degrees(atan(9))))', '((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9))))) + 3*cos(radians(degrees(atan(9)))) + 2*tan(radians(degrees(atan(9))))', '((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9))))) + 3*cos(radians(degrees(atan(9)))) + 2*tan(radians(degrees(atan(9)))) + 4*sec(radians(degrees(atan(9))))']
+['((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9)))))', '((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9)))))', '((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9)))))', '((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9)))))']
+['((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9)))))', '(abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9)) + 732))', '(abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9)) + 732)) + 5*cos(radians(degrees(atan(9))))', '(abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9)) + 732)) + 5*cos(radians(degrees(atan(9)))) + 5*tan(radians(degrees(atan(9))))']
+['log10(5) + sin(asin(-3))', 'log10(9) + sin(asin(-2))', 'log10(11) + sin(asin(-1))', 'log10(13) + sin(asin(0))']
+['(asin(asin(9 - 8)) + (asin(3 - 3) - 9)) - (asin(1) * 3) + (asin(1) * 3)', '(asin(asin(9 - 8)) + (asin(3 - 3) - 9)) - (asin(1) * 3) - (asin(1) * 3)', '(asin(asin(9 - 8)) + (asin(3 - 3) - 9)) + (asin(1) * 3) - (asin(1) * 3)', '(asin(asin(9 - 8)) + (asin(3 - 3) - 9)) + (asin(1) * 3) + (asin(1) * 3)']
+['log10(log10(tanh(acos(acos(floor(log10(log10(2 + 3))))))) + 5)', 'log10(log10(tanh(acos(acos(floor(log10(log10(2 + 3))))))) + 6)', 'log10(log10(tanh(acos(acos(floor(log10(log10(2 + 3))))))) + 7)', 'log10(log10(tanh(acos(acos(floor(log10(log10(2 + 3))))))) + 8)']
+['log10(log10(tanh(acos(acos(floor(log10(log10(2 + 3))))))) - 5) + 3 * sin(log10(log10(2 + 3)))', 'log10(log10(tanh(acos(acos(floor(log10(log10(2 + 3))))))) - 5) / (3 * sin(log10(log10(2 + 3))))', 'log10(log10(tanh(acos(acos(floor(log10(log10(2 + 3))))))) - 5) ^ 3 * sin(log10(log10(2 + 3)))', 'log10(log10(tanh(acos(acos(floor(log10(log10(2 + 3))))))) - 5) ^ (3 * sin(log10(log10(2 + 3))))']
+['log10(log10(tanh(acos(acos(floor(log10(log10(2 + 4))))))) - 6)', 'log10(log10(tanh(acos(acos(floor(log10(log10(3 + 2))))))) - 7)', 'log10(log10(tanh(acos(acos(floor(log10(log10(4 + 1))))))) - 8)', 'log10(log10(tanh(acos(acos(floor(log10(log10(5 + 1))))))) - 9)']
+['(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*cos(radians(degrees(atan(9))))', '(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9))))', '(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*tan(radians(degrees(atan(9))))', '(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*cot(radians(degrees(atan(9))))']
+['((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*cos(radians(degrees(atan(9)))))', '((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9)))))', '((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*tan(radians(degrees(atan(9)))))', '((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sec(radians(degrees(atan(9)))))']
+['(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*cos(radians(degrees(atan(9))))', '(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9))))', '(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*tan(radians(degrees(atan(9))))', '(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*cot(radians(degrees(atan(9))))']
+['(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*cos(radians(degrees(atan(9))))', '(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9))))', '(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*tan(radians(degrees(atan(9))))', '(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*cot(radians(degrees(atan(9))))']
+['(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) - 732))) + 5*cos(radians(degrees(atan(9))))', '(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9))))', '(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*tan(radians(degrees(atan(9))))', '(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*cot(radians(degrees(atan(9))))', '(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sec(radians(degrees(atan(9))))']
+['(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) - 732))) + 5*cos(radians(degrees(atan(9))))', '(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9))))', '(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*tan(radians(degrees(atan(9))))', '(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*cot(radians(degrees(atan(9))))', '(|sinh(cosh(-7))| - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sec(radians(degrees(atan(9))))']
+['((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*cos(radians(degrees(atan(9)))))', '((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*cos(radians(degrees(atan(9)))))', '((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*cos(radians(degrees(atan(9)))))', '((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*cos(radians(degrees(atan(9)))))']
+['((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*cos(radians(degrees(atan(9)))))', '((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9)))))', '((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*tan(radians(degrees(atan(9)))))', '((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sec(radians(degrees(atan(9)))))']
+['((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*cos(radians(degrees(atan(9)))))', '(abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*cos(radians(degrees(atan(9)) + 732))', '(abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*cos(radians(degrees(atan(9)) + 732)) + 5*sin(radians(degrees(atan(9))))', '(abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*cos(radians(degrees(atan(9)) + 732)) + 5*sin(radians(degrees(atan(9)))) + 5*tan(radians(degrees(atan(9))))']
+['cosh(cosh(7 * cosh(2) + 9) + cosh(acos(cosh(cosh(1))))) + cosh(sinh(3 * sinh(5) + 1))', 'cosh(cosh(7 * cosh(2) + 9) + cosh(acos(cosh(cosh(1))))) * cosh(sinh(3 * sinh(5) + 1))', 'cosh(cosh(7 * cosh(2) + 9) + cosh(acos(cosh(cosh(1))))) / cosh(sinh(3 * sinh(5) + 1))', 'cosh(cosh(7 * cosh(2) + 9) + cosh(acos(cosh(cosh(1))))) ^ cosh(sinh(3 * sinh(5) + 1))']
+['cosh(cosh(7 * cosh(2) + 9) + cosh(acos(cosh(cosh(1))))) + cosh(sinh(cosh(3) * sinh(5)))', 'cosh(cosh(7 * cosh(2) + 9) + cosh(acos(cosh(cosh(1))))) * cosh(sinh(cosh(3) * sinh(5)))', 'cosh(cosh(7 * cosh(2) + 9) + cosh(acos(cosh(cosh(1))))) / cosh(sinh(cosh(3) * sinh(5)))', 'cosh(cosh(7 * cosh(2) + 9) + cosh(acos(cosh(cosh(1))))) ^ cosh(sinh(cosh(3) * sinh(5)))']
+['sin(tan(3532382000 + 2π))', 'sin(tan(3532382000 - 2π))', 'sin(tan(3532382000 + π))', 'sin(tan(3532382000 - π))']
+['sin(tan(3532382000)) + cos(sec(3532382000))', 'sin(tan(3532382000)) * cos(tan(3532382000))', 'sin(tan(3532382000)) / cos(tan(3532382000))', 'sin(tan(3532382000)) ^ 2 + cos(tan(3532382000)) ^ 2']
+['sin(tan(3532382001))', 'sin(tan(3532382002))', 'sin(tan(3532382003))', 'sin(tan(3532382004))']
+['floor(tan(sin(cosh(sec(atan(3 + cosh(tan(3))))))))', 'floor(sin(cos(tan(sec(atan(2 + sin(cos(3))))))))', 'floor(cos(tan(sin(sec(atan(1 + sin(cos(2))))))))', 'floor(sin(tan(cos(sec(atan(4 + cos(sin(1))))))))']
+['floor(floor(atan(cosh(asin(7 + cosh(acos(6))))))) + floor(floor(atan(cosh(asin(7 + cosh(acos(6)))))))', 'floor(floor(atan(cosh(asin(7 + cosh(acos(6))))))) * floor(floor(atan(cosh(asin(7 + cosh(acos(6)))))))', 'floor(floor(atan(cosh(asin(7 + cosh(acos(6))))))) / floor(floor(atan(cosh(asin(7 + cosh(acos(6)))))))', 'floor(floor(atan(cosh(asin(7 + cosh(acos(6))))))) ^ floor(floor(atan(cosh(asin(7 + cosh(acos(6)))))))']
+['floor(floor(atan(cosh(asin(7 + cosh(acos(6))))))) + floor(floor(atan(cosh(asin(7 + cosh(acos(6)))))))', 'floor(floor(atan(cosh(asin(7 + cosh(acos(6))))))) * floor(floor(atan(cosh(asin(7 + cosh(acos(6)))))))', 'floor(floor(atan(cosh(asin(7 + cosh(acos(6))))))) / floor(floor(atan(cosh(asin(7 + cosh(acos(6)))))))', 'floor(floor(atan(cosh(asin(7 + cosh(acos(6))))))) ^ floor(floor(atan(cosh(asin(7 + cosh(acos(6)))))))']
+['floor(sin(tan(cos(atan(sin(7 + cosh(acos(6))))))))', 'floor(cos(tan(sin(atan(cosh(7 + cosh(acos(6))))))))', 'floor(sin(tan(cos(atan(cosh(7 + cosh(acos(6))))))))', 'floor(sin(tan(cos(atan(cosh(7 + cosh(acos(6))))))))']
+['((4 + 2) * (10 * 3) / sin(10) * 4)', '(2 * (6 + 4) / (10 * 2) * acos(10))', '(2 * (6 + 4) / (10 * 2) * acos(10))', '(2 * (6 + 4) / (10 * 2) * acos(10))']
+['((8 + 8) * ((12 * 2) / (acos(12) * 2)))', '((4 + 4) * ((15 * 2) / (acos(15) * 2)))', '((10 + 10) * ((18 * 2) / (acos(18) * 2)))', '((12 + 12) * ((20 * 2) / (acos(20) * 2)))']
+['cosh(((cosh(((7 * cosh(2)) * (1 / cosh(7)))) + 9) + cosh(acos(cosh(cosh(1)))))) + cosh(acos(cosh(cosh(2))))', 'cosh(((cosh(((7 * cosh(2)) * (1 / cosh(7)))) + 9) + cosh(acos(cosh(cosh(1)))))) - cosh(acos(cosh(cosh(2))))', 'cosh(((cosh(((7 * cosh(2)) * (1 / cosh(7)))) + 9) + cosh(acos(cosh(cosh(1)))))) * cosh(acos(cosh(cosh(2))))', 'cosh(((cosh(((7 * cosh(2)) * (1 / cosh(7)))) + 9) + cosh(acos(cosh(cosh(1)))))) / cosh(acos(cosh(cosh(2))))']
+['(sinh(ln(5)) * (3 * sinh(sinh(sinh(5)))))', '(tanh(log(11)) * (2 * tanh(tanh(tanh(11)))))', '(sec(sqrt(13)) * (4 * sec(sec(sec(13)))))', '(cot(pow(15, 2)) * (8 * cot(cot(cot(15)))))']
+['(sinh(ln(5)) * (3 * sinh(sinh(sinh(5)))))', '(tanh(log(11)) * (2 * tanh(tanh(tanh(11)))))', '(sec(sqrt(13)) * (4 * sec(sec(sec(13)))))', '(cot(pow(15, 2)) * (8 * cot(cot(cot(15^2))))']
+['(sinh(tanh(5)) * (3 * sinh(sinh(sinh(5)))))', '(sec(log(11)) * (2 * sec(sec(sec(11)))))', '(cot(ln(13)) * (4 * cot(cot(cot(13)))))', '(tan(exp(15)) * (6 * tan(tan(tan(15)))))']
+['(sinh(tanh(5)) * (3 * sinh(sinh(sinh(5)))))', '(sec(log(11)) * (2 * sec(sec(sec(11)))))', '(cot(ln(13)) * (4 * cot(cot(cot(13)))))', '(tan(exp(15)) * (6 * tan(tan(tan(15)))))']
+['(sinh(ln(5)) * (3 * sinh(sinh(sinh(5)))))', '(tanh(log(11)) * (2 * tanh(tanh(tanh(11)))))', '(sec(sqrt(13)) * (4 * sec(sec(sec(13)))))', '(cot(pow(15, 2)) * (8 * cot(cot(cot(15^2))))']
+['(cosh(exp(8)) * (6 * cosh(cosh(cosh(6)))))', '(cosh(exp(10)) * (5 * cosh(cosh(cosh(5)))))', '(cosh(exp(11)) * (4 * cosh(cosh(cosh(4)))))', '(cosh(exp(7)) * (8 * cosh(cosh(cosh(8)))))']
+1 (log10(7) + asin(asin(-4)))
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     81    54%
+-------------------------------------------
+TOTAL                     223    128    43%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     84    52%
+-------------------------------------------
+TOTAL                     223    131    41%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     72    59%
+-------------------------------------------
+TOTAL                     223    119    47%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     79    55%
+-------------------------------------------
+TOTAL                     223    126    43%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     74    58%
+-------------------------------------------
+TOTAL                     223    121    46%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     86    51%
+-------------------------------------------
+TOTAL                     223    133    40%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     223    130    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     86    51%
+-------------------------------------------
+TOTAL                     223    133    40%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     78    55%
+-------------------------------------------
+TOTAL                     223    125    44%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     75    57%
+-------------------------------------------
+TOTAL                     223    122    45%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     88    50%
+-------------------------------------------
+TOTAL                     223    135    39%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     86    51%
+-------------------------------------------
+TOTAL                     223    133    40%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     223    130    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     86    51%
+-------------------------------------------
+TOTAL                     223    133    40%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     86    51%
+-------------------------------------------
+TOTAL                     223    133    40%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     77    56%
+-------------------------------------------
+TOTAL                     223    124    44%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/exception.py            5      4    20%
+src/parse.py              175     87    50%
+-------------------------------------------
+TOTAL                     228    138    39%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     77    56%
+-------------------------------------------
+TOTAL                     223    124    44%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/exception.py            5      4    20%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     228    134    41%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/exception.py            5      4    20%
+src/parse.py              175     99    43%
+-------------------------------------------
+TOTAL                     228    150    34%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     223    130    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     223    130    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     223    130    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     84    52%
+-------------------------------------------
+TOTAL                     223    131    41%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     84    52%
+-------------------------------------------
+TOTAL                     223    131    41%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     84    52%
+-------------------------------------------
+TOTAL                     223    131    41%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/exception.py            5      4    20%
+src/parse.py              175     82    53%
+-------------------------------------------
+TOTAL                     228    133    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/exception.py            5      4    20%
+src/parse.py              175     82    53%
+-------------------------------------------
+TOTAL                     228    133    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/exception.py            5      4    20%
+src/parse.py              175     82    53%
+-------------------------------------------
+TOTAL                     228    133    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     85    51%
+-------------------------------------------
+TOTAL                     223    132    41%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     85    51%
+-------------------------------------------
+TOTAL                     223    132    41%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     85    51%
+-------------------------------------------
+TOTAL                     223    132    41%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     74    58%
+-------------------------------------------
+TOTAL                     223    121    46%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     74    58%
+-------------------------------------------
+TOTAL                     223    121    46%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     74    58%
+-------------------------------------------
+TOTAL                     223    121    46%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     223    130    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     88    50%
+-------------------------------------------
+TOTAL                     223    135    39%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     85    51%
+-------------------------------------------
+TOTAL                     223    132    41%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     85    51%
+-------------------------------------------
+TOTAL                     223    132    41%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     86    51%
+-------------------------------------------
+TOTAL                     223    133    40%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     86    51%
+-------------------------------------------
+TOTAL                     223    133    40%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     86    51%
+-------------------------------------------
+TOTAL                     223    133    40%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     78    55%
+-------------------------------------------
+TOTAL                     223    125    44%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     78    55%
+-------------------------------------------
+TOTAL                     223    125    44%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     78    55%
+-------------------------------------------
+TOTAL                     223    125    44%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     75    57%
+-------------------------------------------
+TOTAL                     223    122    45%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     75    57%
+-------------------------------------------
+TOTAL                     223    122    45%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/exception.py            5      4    20%
+src/parse.py              175     87    50%
+-------------------------------------------
+TOTAL                     228    138    39%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     88    50%
+-------------------------------------------
+TOTAL                     223    135    39%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     88    50%
+-------------------------------------------
+TOTAL                     223    135    39%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     86    51%
+-------------------------------------------
+TOTAL                     223    133    40%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     86    51%
+-------------------------------------------
+TOTAL                     223    133    40%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     86    51%
+-------------------------------------------
+TOTAL                     223    133    40%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     223    130    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     70    60%
+-------------------------------------------
+TOTAL                     223    117    48%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     223    130    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     86    51%
+-------------------------------------------
+TOTAL                     223    133    40%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     82    53%
+-------------------------------------------
+TOTAL                     223    129    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     86    51%
+-------------------------------------------
+TOTAL                     223    133    40%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     86    51%
+-------------------------------------------
+TOTAL                     223    133    40%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     86    51%
+-------------------------------------------
+TOTAL                     223    133    40%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     86    51%
+-------------------------------------------
+TOTAL                     223    133    40%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     77    56%
+-------------------------------------------
+TOTAL                     223    124    44%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     77    56%
+-------------------------------------------
+TOTAL                     223    124    44%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     77    56%
+-------------------------------------------
+TOTAL                     223    124    44%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     223    130    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     223    130    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     223    130    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/exception.py            5      4    20%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     228    134    41%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/exception.py            5      4    20%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     228    134    41%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/exception.py            5      4    20%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     228    134    41%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/exception.py            5      4    20%
+src/parse.py              175    102    42%
+-------------------------------------------
+TOTAL                     228    153    33%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/exception.py            5      4    20%
+src/parse.py              175    102    42%
+-------------------------------------------
+TOTAL                     228    153    33%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/exception.py            5      4    20%
+src/parse.py              175     99    43%
+-------------------------------------------
+TOTAL                     228    150    34%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     75    57%
+-------------------------------------------
+TOTAL                     223    122    45%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     75    57%
+-------------------------------------------
+TOTAL                     223    122    45%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     223    130    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     223    130    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     223    130    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     223    130    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     223    130    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     86    51%
+-------------------------------------------
+TOTAL                     223    133    40%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     86    51%
+-------------------------------------------
+TOTAL                     223    133    40%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     86    51%
+-------------------------------------------
+TOTAL                     223    133    40%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     86    51%
+-------------------------------------------
+TOTAL                     223    133    40%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     223    130    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     85    51%
+-------------------------------------------
+TOTAL                     223    132    41%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     85    51%
+-------------------------------------------
+TOTAL                     223    132    41%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     223    130    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     74    58%
+-------------------------------------------
+TOTAL                     223    121    46%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     72    59%
+-------------------------------------------
+TOTAL                     223    119    47%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     74    58%
+-------------------------------------------
+TOTAL                     223    121    46%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     77    56%
+-------------------------------------------
+TOTAL                     223    124    44%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     74    58%
+-------------------------------------------
+TOTAL                     223    121    46%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     74    58%
+-------------------------------------------
+TOTAL                     223    121    46%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     74    58%
+-------------------------------------------
+TOTAL                     223    121    46%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     74    58%
+-------------------------------------------
+TOTAL                     223    121    46%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     74    58%
+-------------------------------------------
+TOTAL                     223    121    46%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     74    58%
+-------------------------------------------
+TOTAL                     223    121    46%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     74    58%
+-------------------------------------------
+TOTAL                     223    121    46%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     81    54%
+-------------------------------------------
+TOTAL                     223    128    43%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     84    52%
+-------------------------------------------
+TOTAL                     223    131    41%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     72    59%
+-------------------------------------------
+TOTAL                     223    119    47%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     79    55%
+-------------------------------------------
+TOTAL                     223    126    43%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     74    58%
+-------------------------------------------
+TOTAL                     223    121    46%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     86    51%
+-------------------------------------------
+TOTAL                     223    133    40%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     223    130    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     86    51%
+-------------------------------------------
+TOTAL                     223    133    40%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     78    55%
+-------------------------------------------
+TOTAL                     223    125    44%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     75    57%
+-------------------------------------------
+TOTAL                     223    122    45%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     88    50%
+-------------------------------------------
+TOTAL                     223    135    39%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     86    51%
+-------------------------------------------
+TOTAL                     223    133    40%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     223    130    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     86    51%
+-------------------------------------------
+TOTAL                     223    133    40%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     86    51%
+-------------------------------------------
+TOTAL                     223    133    40%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     77    56%
+-------------------------------------------
+TOTAL                     223    124    44%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/exception.py            5      4    20%
+src/parse.py              175     87    50%
+-------------------------------------------
+TOTAL                     228    138    39%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     77    56%
+-------------------------------------------
+TOTAL                     223    124    44%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/exception.py            5      4    20%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     228    134    41%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/exception.py            5      4    20%
+src/parse.py              175     99    43%
+-------------------------------------------
+TOTAL                     228    150    34%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     223    130    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     223    130    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     223    130    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     84    52%
+-------------------------------------------
+TOTAL                     223    131    41%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     84    52%
+-------------------------------------------
+TOTAL                     223    131    41%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     84    52%
+-------------------------------------------
+TOTAL                     223    131    41%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/exception.py            5      4    20%
+src/parse.py              175     82    53%
+-------------------------------------------
+TOTAL                     228    133    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/exception.py            5      4    20%
+src/parse.py              175     82    53%
+-------------------------------------------
+TOTAL                     228    133    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/exception.py            5      4    20%
+src/parse.py              175     82    53%
+-------------------------------------------
+TOTAL                     228    133    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     85    51%
+-------------------------------------------
+TOTAL                     223    132    41%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     85    51%
+-------------------------------------------
+TOTAL                     223    132    41%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     85    51%
+-------------------------------------------
+TOTAL                     223    132    41%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     74    58%
+-------------------------------------------
+TOTAL                     223    121    46%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     74    58%
+-------------------------------------------
+TOTAL                     223    121    46%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     74    58%
+-------------------------------------------
+TOTAL                     223    121    46%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     223    130    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     88    50%
+-------------------------------------------
+TOTAL                     223    135    39%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     85    51%
+-------------------------------------------
+TOTAL                     223    132    41%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     85    51%
+-------------------------------------------
+TOTAL                     223    132    41%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     86    51%
+-------------------------------------------
+TOTAL                     223    133    40%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     86    51%
+-------------------------------------------
+TOTAL                     223    133    40%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     86    51%
+-------------------------------------------
+TOTAL                     223    133    40%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     78    55%
+-------------------------------------------
+TOTAL                     223    125    44%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     78    55%
+-------------------------------------------
+TOTAL                     223    125    44%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     78    55%
+-------------------------------------------
+TOTAL                     223    125    44%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     75    57%
+-------------------------------------------
+TOTAL                     223    122    45%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     75    57%
+-------------------------------------------
+TOTAL                     223    122    45%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/exception.py            5      4    20%
+src/parse.py              175     87    50%
+-------------------------------------------
+TOTAL                     228    138    39%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     88    50%
+-------------------------------------------
+TOTAL                     223    135    39%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     88    50%
+-------------------------------------------
+TOTAL                     223    135    39%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     86    51%
+-------------------------------------------
+TOTAL                     223    133    40%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     86    51%
+-------------------------------------------
+TOTAL                     223    133    40%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     86    51%
+-------------------------------------------
+TOTAL                     223    133    40%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     223    130    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     70    60%
+-------------------------------------------
+TOTAL                     223    117    48%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     223    130    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     86    51%
+-------------------------------------------
+TOTAL                     223    133    40%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     82    53%
+-------------------------------------------
+TOTAL                     223    129    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     86    51%
+-------------------------------------------
+TOTAL                     223    133    40%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     86    51%
+-------------------------------------------
+TOTAL                     223    133    40%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     86    51%
+-------------------------------------------
+TOTAL                     223    133    40%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     86    51%
+-------------------------------------------
+TOTAL                     223    133    40%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     77    56%
+-------------------------------------------
+TOTAL                     223    124    44%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     77    56%
+-------------------------------------------
+TOTAL                     223    124    44%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     77    56%
+-------------------------------------------
+TOTAL                     223    124    44%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     223    130    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     223    130    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     223    130    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/exception.py            5      4    20%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     228    134    41%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/exception.py            5      4    20%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     228    134    41%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/exception.py            5      4    20%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     228    134    41%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/exception.py            5      4    20%
+src/parse.py              175    102    42%
+-------------------------------------------
+TOTAL                     228    153    33%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/exception.py            5      4    20%
+src/parse.py              175    102    42%
+-------------------------------------------
+TOTAL                     228    153    33%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/exception.py            5      4    20%
+src/parse.py              175     99    43%
+-------------------------------------------
+TOTAL                     228    150    34%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     75    57%
+-------------------------------------------
+TOTAL                     223    122    45%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     75    57%
+-------------------------------------------
+TOTAL                     223    122    45%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     223    130    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     223    130    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     223    130    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     223    130    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     223    130    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     86    51%
+-------------------------------------------
+TOTAL                     223    133    40%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     86    51%
+-------------------------------------------
+TOTAL                     223    133    40%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     86    51%
+-------------------------------------------
+TOTAL                     223    133    40%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     86    51%
+-------------------------------------------
+TOTAL                     223    133    40%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     223    130    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     85    51%
+-------------------------------------------
+TOTAL                     223    132    41%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     85    51%
+-------------------------------------------
+TOTAL                     223    132    41%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     83    53%
+-------------------------------------------
+TOTAL                     223    130    42%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     74    58%
+-------------------------------------------
+TOTAL                     223    121    46%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     72    59%
+-------------------------------------------
+TOTAL                     223    119    47%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     74    58%
+-------------------------------------------
+TOTAL                     223    121    46%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     77    56%
+-------------------------------------------
+TOTAL                     223    124    44%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     74    58%
+-------------------------------------------
+TOTAL                     223    121    46%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     74    58%
+-------------------------------------------
+TOTAL                     223    121    46%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     74    58%
+-------------------------------------------
+TOTAL                     223    121    46%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     74    58%
+-------------------------------------------
+TOTAL                     223    121    46%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     74    58%
+-------------------------------------------
+TOTAL                     223    121    46%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     74    58%
+-------------------------------------------
+TOTAL                     223    121    46%
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/coverage_parse.py      48     47     2%
+src/parse.py              175     74    58%
+-------------------------------------------
+TOTAL                     223    121    46%
+Name                      Stmts   Miss  Cover
+---------------------------------------------
+src/coverage_parse.py        48     47     2%
+src/evollmfuzz/input.py      31     30     3%
+src/exception.py              5      4    20%
+src/parse.py                175     65    63%
+---------------------------------------------
+TOTAL                       259    146    44%
+(log10(7) + asin(asin(-4)))    (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+((asin((log10(-9) + acos((acos(8) * (acos(acos(1)) + 7))))) * asin(4)) - log(6)) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+cosh(((cosh(((7 * cosh(2)) * (1 / cosh(7)))) + 9) + cosh(acos(cosh(cosh(1)))))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+log10(log10(tanh(acos(acos(floor(log10(log10((2 + 3))))))))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+((8 + 8) * ((9 * 2) / (acos(9) * 1))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+(cosh(exp(9)) * (7 * cosh(cosh(cosh(7))))) (<OracleResult.BUG: 'BUG'>, OverflowError('math range error'))
+floor(floor(tanh(acos((6 + cosh(asin(atan(7)))))))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+log10((acos(2) / (-6 / acos(-4)))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+(-593 / (log10(5) + acos(2)))  (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+floor(sqrt((degrees(-311) - (degrees(9) + cosh(1))))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+cosh(cosh(cosh(cosh(cosh(9))))) (<OracleResult.BUG: 'BUG'>, OverflowError('math range error'))
+(asin(asin((acos((asin(4) + 8)) + asin(asin(1))))) + asin(asin(asin(asin((log10(1) - asin(acos(acos(-6))))))))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+(((cosh(4) * ((((acos(3) * tanh(3)) + sinh(cosh(3))) * -3) / acos(3))) / 4) / cosh(1)) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+(acos(acos(4)) / (acos(9) + (acos(2) + 8))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+(asin(8) - (((sqrt(-3) - asin(asin(1))) + acos(7)) * acos(sqrt(asin(7))))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+((-7 * (0 * 4)) * log10((5 * -4))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+degrees(cosh(degrees(1)))      (<OracleResult.BUG: 'BUG'>, testError('overflow'))
+(asin((asin((8 - 9)) + ((3 - 3) - 9))) - (asin(1) * 3)) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+((abs(sinh(cosh(-7))) - cos(fabs((radians(degrees(atan(9))) + -732)))) + 5) (<OracleResult.BUG: 'BUG'>, testError('overflow'))
+asin(cos(-3532382000))         (<OracleResult.BUG: 'BUG'>, testError('underflow'))
+log10(7) + tan(asin(-4))       (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+log10(7) + sin(asin(-4))       (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+log10(7) + cos(asin(-4))       (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+((asin((log10(-9) + acos((acos(8) * (acos(acos(1)) + 1))))) * asin(4)) - log(6)) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+((asin((log10(-9) + acos((acos(8) * (acos(acos(1)) + 3))))) * asin(4)) - log(6)) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+((asin((log10(-9) + acos((acos(8) * (acos(acos(1)) + 5))))) * asin(4)) - log(6)) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+cosh(cosh(7 * cosh(2) + 9) + cosh(acos(cosh(cosh(1))))) (<OracleResult.BUG: 'BUG'>, testError('overflow'))
+cosh(cosh(7 * cosh(2) + 9) + cosh(acos(cosh(cosh(1))))) * cosh(7 * cosh(2)) (<OracleResult.BUG: 'BUG'>, testError('overflow'))
+cosh(cosh(7 * cosh(2) + 9) + cosh(acos(cosh(cosh(1))))) / cosh(7 * cosh(2)) (<OracleResult.BUG: 'BUG'>, testError('overflow'))
+log10(log10(tanh(acos(acos(floor(log10(log10(2 + 3))))))) - 5) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+log10(log10(tanh(acos(acos(floor(log10(log10(2 + 3))))))) * 5) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+log10(log10(tanh(acos(acos(floor(log10(log10(2 + 3))))))) + 4) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+((10 + 10) * ((12 * 2) / (acos(12) * 3))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+((12 + 12) * ((14 * 2) / (acos(14) * 4))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+((6 + 6) * ((10 * 2) / (acos(10) * 2))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+(cosh(exp(5)) * (3 * cosh(cosh(cosh(3))))) (<OracleResult.BUG: 'BUG'>, OverflowError('math range error'))
+floor(tanh(acos(cosh(asin(atan(7)))))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+floor(floor(atan(cosh(asin(7 + cosh(acos(6))))))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+floor(floor(tanh(asin(cosh(acos(6 + cosh(asin(7)))))))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+log10((acos(5) / (-3 / acos(-1)))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+log10((acos(4) / (-4 / acos(-2)))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+log10((acos(3) / (-5 / acos(-3)))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+(-593 / (log10(5) + acos(2))) * (log10(7) - acos(3)) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+(-593 / (log10(7) + acos(3)))  (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+(-593 / (log10(5) + acos(2))) + 3 * (log10(7) - acos(3)) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+floor(sqrt((degrees(-311) - (degrees(9) + sin(1))))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+floor(sqrt((degrees(-311) - (degrees(9) + tan(1))))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+cosh(cosh(cosh(cosh(cosh(tanh(9)))))) (<OracleResult.BUG: 'BUG'>, testError('overflow'))
+cosh(cosh(cosh(cosh(cosh(sinh(9)))))) (<OracleResult.BUG: 'BUG'>, OverflowError('math range error'))
+sinh(sinh(sinh(sinh(sinh(9))))) (<OracleResult.BUG: 'BUG'>, OverflowError('math range error'))
+(asin(asin((acos((asin(4) + 8)) + asin(asin(1))))) + asin(asin(asin(asin((log10(1) - asin(acos(acos(1))))))))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+(asin(asin(acos(asin(4) + 8)) + asin(asin(1))) + asin(asin(asin(asin(log10(1) - asin(acos(acos(-6)))))))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+(asin(asin((acos((asin(4) + 8)) + asin(asin(1))))) + asin(asin(asin(asin((log10(1) - asin(acos(acos(-6))))))))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+(((cosh(3) * ((((acos(2) * tanh(2)) + sinh(cosh(2))) * -2) / acos(2))) / 3) / cosh(2)) / cosh(1) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+(((cosh(5) * ((((acos(1) * tanh(1)) + sinh(cosh(1))) * -1) / acos(1))) / 5) / cosh(4)) / cosh(1) (<OracleResult.BUG: 'BUG'>, ZeroDivisionError())
+(((cosh(2) * ((((acos(4) * tanh(4)) + sinh(cosh(4))) * -4) / acos(4))) / 2) / cosh(3)) / cosh(1) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+(acos(acos(2)) / (acos(7) + (acos(6) + 4))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+(acos(acos(1)) / (acos(8) + (acos(9) + 3))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+(acos(acos(3)) / (acos(5) + (acos(1) + 6))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+(asin(8) - (sqrt(-3) * (asin(asin(1)) - acos(7)) * acos(sqrt(asin(7))))) * acos(sqrt(asin(7))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+(asin(8) - (sqrt(-3) * (asin(asin(1)) - acos(7)) * acos(sqrt(asin(7))))) + acos(sqrt(asin(7))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+(asin(8) - (sqrt(-3) * (asin(asin(1)) - acos(7)) * acos(sqrt(asin(7))))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+(-7 * (0 * 4)) * log10(5 * -4) + 3 * log10(5 * -4) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+(-7 * (0 * 4)) * log10(5 * -4) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+(-7 * (0 * 4)) * log10(5 * -4) + 3 * log10(5 * -4) + log10(5 * -4) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+(asin(asin(8 - 9)) + (asin(3 - 3) - 9)) - (asin(1) * 3) + (asin(1) * 3) + (asin(1) * 3) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+(asin(asin(8 - 9)) + (asin(3 - 3) - 9)) - (asin(1) * 3) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+(asin(asin(8 - 9)) + (asin(3 - 3) - 9)) - (asin(1) * 3) + (asin(1) * 3) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*sin(radians(degrees(atan(9))))) (<OracleResult.BUG: 'BUG'>, testError('overflow'))
+((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5) (<OracleResult.BUG: 'BUG'>, testError('overflow'))
+((abs(sinh(cosh(-7))) - cos(fabs(radians(degrees(atan(9))) + 732))) + 5*cos(radians(degrees(atan(9))))) (<OracleResult.BUG: 'BUG'>, testError('overflow'))
+cos(asin(3532382000))          (<OracleResult.BUG: 'BUG'>, testError('overflow'))
+sin(tan(3532382000))           (<OracleResult.BUG: 'BUG'>, testError('overflow'))
+sin(cos(-3532382000))          (<OracleResult.BUG: 'BUG'>, testError('underflow'))
+floor(sqrt((degrees(-311) - (degrees(9) + tan(1))))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+floor(sqrt((degrees(-311) - (degrees(9) + cos(1))))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+floor(sqrt(degrees(-311) - degrees(9) - sin(1))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+(asin(log10(9) + acos(acos(8) * (acos(acos(1)) + 3))) * acos(4)) - log(6) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+((asin(log10(9) - acos(acos(8) * (acos(acos(1)) + 3))) * acos(4)) - log(6)) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+(asin(log10(9) + acos(acos(8) * (acos(acos(1)) + 3))) * acos(4)) - log(6) + 5 (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+(asin(log10(9) + acos(acos(8) * (acos(acos(1)) + 3))) * acos(4)) - log(6) + 5 * acos(4) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+(asin(8) - (sqrt(-3) * (asin(asin(1)) - acos(7)) * acos(sqrt(asin(7))))) * acos(sqrt(asin(7))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+(asin(8) - (sqrt(-3) * (asin(asin(1)) - acos(7)) * acos(sqrt(asin(7))))) + acos(sqrt(asin(7))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+(asin(8) - (sqrt(-3) * (asin(asin(1)) - acos(7)) * acos(sqrt(asin(7))))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+(asin(8) - (sqrt(-3) * (asin(asin(1)) - acos(7)) * acos(sqrt(asin(7))))) / acos(sqrt(asin(7))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+log10(7) + tan(asin(-4)) * 2   (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+log10(7) + tan(asin(4))        (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+log10(7) + sin(asin(4))        (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+log10(7) + tan(asin(-4)) + 3   (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+((10 + 10) * ((12 * 2) / (acos(12) * 3))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+((10 - 10) * ((12 / 2) * acos(12) / 3)) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+(10 * (10 + 10) * (12 * 2) / (acos(12) * 3)) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+((10 + 10) * (12 * 2) * (acos(12) * 3)) / (12 * 2) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+((12 + 12) * ((14 * 2) / (acos(14) * 4))) + ((12 + 12) * ((14 * 2) / (acos(14) * 4))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+((12 + 12) * ((14 * 2) / (acos(14) * 4))) / ((12 + 12) * ((14 * 2) / (acos(14) * 4))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+((12 - 12) * ((14 * 2) / (acos(14) * 4))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+((16 + 16) * ((18 * 2) / (acos(18) * 4))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+((16 + 16) * ((18 * 2) / (acos(18) * 1))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+((16 + 16) * ((18 * 2) / (acos(18) * 3))) (<OracleResult.BUG: 'BUG'>, ValueError('math domain error'))
+number_of_inp:  100
+Nobug:  0.0
+ValueError:  81.0
+OverflowError:  16.0
+UnderflowError:  2.0
+ZerocollisionError:  0.0
+DivisionError:  1.0
+Distinct bug:  4  /  5
+Bug Ratio:  100  /  100
+Mutating Next Generation
+['(-593 / (log10(5) + acos(2))) + 3 * sin(4)', '(-593 / (log10(5) + acos(2))) * e^(2x)', '(-593 / (log10(5) + acos(2)))^2 + 3 * sin(4)', '(-593 / (log10(5) + acos(2)))^2 * e^(2x) + 3 * sin(4)']
+['(-593 / (log10(5) + acos(2))) + 3 * sin(4)', '(-593 / (log10(5) + acos(2))) * e^(2x)', '(-593 / (log10(5) + acos(2)))^2 + 3 * sin(4)', '(-593 / (log10(5) + acos(2)))^2 * e^(2x) + 3 * sin(4)']
+['(-593 / (log10(5) + acos(2))) + 3 * sin(4)', '(-593 / (log10(5) + acos(2))) * e^(2x)', '(-593 / (log10(5) + acos(2)))^2 + 3 * sin(4)', '(-593 / (log10(5) + acos(2)))^2 * e^(2x) + 3 * sin(4)']
+['(-593 / (log10(5) + acos(2))) + 3 * sin(4)', '(-593 / (log10(5) + acos(2))) * e^(3x)', '(-593 / (log10(5) + acos(2)))^2 + 3 * sin(4)', '(-593 / (log10(5) + acos(2)))^2 * e^(3x) + 3 * sin(4)']
+['(-593 / (log10(5) - acos(2)))', '(-593 / (log10(5) * acos(2)))', '(-593 / (log10(5) + acos(2) * 2))', '(-593 / (log10(5) + acos(2) + acos(3)))', '(-593 / (log10(5) + acos(2) + acos(3) + acos(4)))']
+['floor(floor(atan(cosh(asin(7 + cosh(acos(6)))))) + 3)', 'floor(atan(cosh(asin(7 + cosh(acos(6)))))) * 2', 'floor(atan(cosh(asin(7 + cosh(acos(6)))))) / 4', 'floor(atan(cosh(asin(7 + cosh(acos(6)))))) ^ 3']
+['floor(sin(tan(cos(atan(sin(7 + cosh(acos(6))))))))', 'floor(cos(tan(sin(atan(cosh(7 + cosh(acos(6))))))))', 'floor(sin(tan(cos(atan(cosh(7 + cosh(acos(6))))))))', 'floor(sin(tan(cos(atan(cosh(7 + cosh(acos(6))))))))']
+['(acos(acos(3)) / (acos(5) + (acos(1) + 6))) + (acos(acos(3)) / (acos(5) + (acos(1) + 6)))', '(acos(acos(3)) / (acos(5) + (acos(1) + 6))) * (acos(acos(3)) / (acos(5) + (acos(1) + 6)))', '(acos(acos(3)) / (acos(5) + (acos(1) + 6))) ^ (acos(acos(3)) / (acos(5) + (acos(1) + 6)))', '(acos(acos(3)) / (acos(5) + (acos(1) + 6))) / (acos(acos(3)) / (acos(5) + (acos(1) + 6)))']
+['(acos(acos(2)) / (acos(4) + (acos(7) + 8)))', '(acos(acos(1)) / (acos(6) + (acos(9) + 10)))', '(acos(acos(5)) / (acos(8) + (acos(3) + 11)))', '(acos(acos(4)) / (acos(7) + (acos(2) + 12)))']
+['floor(floor(atan(cosh(asin(7 + cosh(acos(5)))))))', 'floor(floor(atan(cosh(asin(7 + cosh(acos(4)))))))', 'floor(floor(atan(cosh(asin(7 + cosh(acos(3)))))))', 'floor(floor(atan(cosh(asin(7 + cosh(acos(2)))))))']
+['(((cosh(3) * ((((acos(1) * tanh(2)) + sinh(cosh(2))) * -1) / acos(1))) / 3) / cosh(3)) / cosh(2)', '(((cosh(4) * ((((acos(1) * tanh(3)) + sinh(cosh(3))) * -1) / acos(1))) / 4) / cosh(4)) / cosh(3)', '(((cosh(2) * ((((acos(1) * tanh(4)) + sinh(cosh(4))) * -1) / acos(1))) / 2) / cosh(2)) / cosh(4)', '(((cosh(1) * ((((acos(1) * tanh(5)) + sinh(cosh(5))) * -1) / acos(1))) / 1) / cosh(1)) / cosh(5)']
+['((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))']
+['((12 - 12) * ((14 * 2) / (acos(14) * 4))) * ((12 - 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))']
+['log10(9) + tan(asin(3)) * 3', 'log10(5) + tan(asin(2)) * 4', 'log10(3) + tan(asin(1)) * 5', 'log10(11) + tan(asin(6)) * 6']
+['(asin(8) - (sqrt(-3) * (asin(asin(1)) - acos(7)) * acos(sqrt(asin(7))))) + acos(sqrt(asin(7)))', '(asin(8) - (sqrt(-3) * (asin(asin(1)) - acos(7)) * acos(sqrt(asin(7))))) + acos(sqrt(asin(7)))', '(asin(8) - (sqrt(-3) * (asin(asin(1)) - acos(7)) * acos(sqrt(asin(7))))) + acos(sqrt(asin(7)))', '(asin(8) - (sqrt(-3) * (asin(asin(1)) - acos(7)) * acos(sqrt(asin(7))))) + acos(sqrt(asin(7)))']
+['(asin(8) - (sqrt(-3) * (asin(asin(1)) - acos(7)) * acos(sqrt(asin(7))))) + acos(sqrt(asin(7)))', '(asin(8) - (sqrt(-3) * (asin(asin(1)) - acos(7)) * acos(sqrt(asin(7))))) + acos(sqrt(asin(7)))', '(asin(8) - (sqrt(-3) * (asin(asin(1)) - acos(7)) * acos(sqrt(asin(7))))) + acos(sqrt(asin(7)))', '(asin(8) - (sqrt(-3) * (asin(asin(1)) - acos(7)) * acos(sqrt(asin(7))))) + acos(sqrt(asin(7)))']
+['(asin(8) - (sqrt(-3) * (asin(asin(1)) - acos(7)) * acos(sqrt(asin(7))))) + acos(sqrt(asin(7)))', '(asin(8) - (sqrt(-3) * (asin(asin(1)) - acos(7)) * acos(sqrt(asin(7))))) + acos(sqrt(asin(7)))', '(asin(8) - (sqrt(-3) * (asin(asin(1)) - acos(7)) * acos(sqrt(asin(7))))) + acos(sqrt(asin(7)))', '(asin(8) - (sqrt(-3) * (asin(asin(1)) - acos(7)) * acos(sqrt(asin(7))))) + acos(sqrt(asin(7)))']
+['(asin(6) - (sqrt(-3) * (asin(asin(1)) - acos(5)) * acos(sqrt(asin(5))))) + acos(sqrt(asin(5)))', '(asin(10) - (sqrt(-3) * (asin(asin(1)) - acos(9)) * acos(sqrt(asin(9))))) + acos(sqrt(asin(9)))', '(asin(12) - (sqrt(-3) * (asin(asin(1)) - acos(11)) * acos(sqrt(asin(11))))) + acos(sqrt(asin(11)))', '(asin(14) - (sqrt(-3) * (asin(asin(1)) - acos(13)) * acos(sqrt(asin(13))))) + acos(sqrt(asin(13)))']
+['cos(asin(3532382000)) + cos(asin(3532382000)) = 2cos(asin(3532382000))', 'cos(asin(3532382000)) - cos(asin(3532382000)) = 0', 'cos(asin(3532382000)) * cos(asin(3532382000)) = cos^2(asin(3532382000))', 'cos(asin(3532382000)) / cos(asin(3532382000)) = 1', '', 'e: These equations are analogous in the sense that they all involve the same trigonometric functions and the same argument (3532382000), but they have different operations and structures.']
+['cos(asin(3532382000)) + sin(asin(3532382000)) = 0', 'cos(asin(3532382000)) * sin(asin(3532382000)) = 0.5', 'cos(asin(3532382000)) * sin(asin(3532382000)) * cos(asin(3532382000)) = 0.25', 'cos(asin(3532382000)) * sin(asin(3532382000)) * cos(asin(3532382000)) * sin(asin(3532382000)) = 0.125']
+['cos(asin(3532382000)) + sin(asin(3532382000))', 'cos(asin(3532382000)) * sin(asin(3532382000))', 'cos(asin(3532382000))^2 + sin(asin(3532382000))^2', 'cos(asin(3532382000)) / sin(asin(3532382000))']
+['cos(asin(3532382000)) + sin(asin(3532382000)) = 0', 'cos(asin(3532382000)) * sin(asin(3532382000)) = 0.5', 'cos(asin(3532382000)) * sin(asin(3532382000)) * cos(asin(3532382000)) = 0.25', 'cos(asin(3532382000)) * sin(asin(3532382000)) * cos(asin(3532382000)) * sin(asin(3532382000)) = 0.125']
+['cos(asin(3532382000)) + cos(asin(3532382000)) = 2cos(asin(3532382000))', 'cos(asin(3532382000)) - cos(asin(3532382000)) = 0', 'cos(asin(3532382000)) * cos(asin(3532382000)) = cos^2(asin(3532382000))', 'cos(asin(3532382000)) / cos(asin(3532382000)) = 1', '', 'e: These equations are analogous in the sense that they all involve the same trigonometric functions and the same argument (3532382000), but they have different operations and structures.']
+['cos(asin(3532382000)) + sin(asin(3532382000))', 'cos(asin(3532382000)) * sin(asin(3532382000))', 'cos(asin(3532382000))^2 + sin(asin(3532382000))^2', 'cos(asin(3532382000)) / sin(asin(3532382000))']
+['cos(asin(3532382000)) + sin(asin(3532382000))', 'cos(asin(3532382000)) * sin(asin(3532382000))', 'cos(asin(3532382000))^2 + sin(asin(3532382000))^2', 'cos(asin(3532382000))^3 + sin(asin(3532382000))^3']
+['cos(asin(3532382000)) + sin(asin(3532382000))', 'cos(asin(3532382000)) * sin(asin(3532382000))', 'cos(asin(3532382000))^2 + sin(asin(3532382000))^2', 'cos(asin(3532382000)) / sin(asin(3532382000))']
+['cos(asin(3532382000)) + sin(asin(3532382000))', 'cos(asin(3532382000)) * sin(asin(3532382000))', 'cos(asin(3532382000))^2 + sin(asin(3532382000))^2', 'cos(asin(3532382000)) / sin(asin(3532382000))']
+['cos(asin(3532382000)) + sin(tan(3532382000))', 'cos(asin(3532382000)) * sin(tan(3532382000))', 'cos(asin(3532382000)) / sin(tan(3532382000))', 'cos(asin(3532382000)) ^ sin(tan(3532382000))']
+['floor(floor(tanh(acos((6 + cosh(asin(atan(8)))))))', 'floor(floor(tanh(acos((6 + cosh(asin(atan(9)))))))', 'floor(floor(tanh(acos((6 + cosh(asin(atan(10)))))))', 'floor(floor(tanh(acos((6 + cosh(asin(atan(11)))))))']
+['floor(tanh(acos(cosh(asin(atan(7))))))', 'floor(tanh(acos(cosh(asin(atan(6))))))', 'floor(tanh(acos(cosh(asin(atan(cot(7)))))))', 'floor(tanh(acos(cosh(asin(atan(cot(6)))))))']
+['floor(tanh(acos(cosh(asin(atan(7))))))', 'floor(tanh(acos(cosh(asin(atan(6))))))', 'floor(tanh(acos(cosh(asin(atan(cot(7)))))))', 'floor(tanh(acos(cosh(asin(atan(cot(6)))))))']
+['floor(floor(tanh(acos((6 + cosh(asin(atan(7))))))))', 'floor(floor(tanh(acos((6 + cosh(asin(atan(7)))))) + 3))', 'floor(floor(tanh(acos((6 + cosh(asin(atan(7)))))) * 2))', 'floor(floor(tanh(acos((6 + cosh(asin(atan(7)))))) / 4))']
+['log10((acos(2) / (-5 / acos(-2))))', 'log10((acos(1) / (-5 / acos(1)))', 'log10((acos(4) / (-5 / acos(4)))', 'log10((acos(5) / (-5 / acos(5))))']
+['log10(acos(3) / (5 / acos(3)))', 'log10(acos(3) / (5 / acos(3)) + 2)', 'log10(acos(3) / (5 / acos(3)) - 2)', 'log10(acos(3) / (5 / acos(3)) ^ 2)', 'log10(acos(3) / (5 / acos(3)) ^ 2) + 3']
+['floor(sqrt(degrees(-311) - degrees(9) - sin(2)))', 'floor(sqrt(degrees(-311) - degrees(9) - sin(3)))', 'floor(sqrt(degrees(-311) - degrees(9) - sin(4)))', 'floor(sqrt(degrees(-311) - degrees(9) - sin(5)))']
+['((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))']
+['((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))']
+['((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))']
+['((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))']
+['((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))']
+['((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 +']
+['((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 +']
+['((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))']
+['((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 +']
+['((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))']
+['((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))']
+['((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))']
+['((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 +']
+['((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))']
+['((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))']
+['((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))']
+['((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))']
+['((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))']
+['((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))', '((12 + 12) * ((14 * 2) / (acos(14) * 4))) * ((12 + 12) * ((14 * 2) / (acos(14) * 4)))']
